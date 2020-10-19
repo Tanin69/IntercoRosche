@@ -21,8 +21,8 @@ Parameter(s) :
 5 : NUMBER (optional, default 0.5) - Probabilité que l'arme fixe soit spawnée avec un gunner
 6 : NUMBER (optional, default 0.8) - Probabilité pour qu'un ordre de monter dans l'arme fixe soit donné à une IA hostile (si les conditions sont remplies)
 
-ex. : ["Nord3"] spawn fn_spawnFixedWeapons;
-ex. : ["Nord3",opfor,"rhsgref_ins_DSHKM","rhsgref_ins_rifleman",1,0.1,1] spawn fn_spawnFixedWeapons;
+ex. : ["Nord3"] spawn int_fnc_spawnFixedWeapons;
+ex. : ["Nord3",opfor,"rhsgref_ins_DSHKM","rhsgref_ins_rifleman",1,0.1,1] spawn int_fnc_spawnFixedWeapons;
 
 Returns :
 Nothing
