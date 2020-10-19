@@ -164,9 +164,9 @@ GROUPE_OPFOR_GRAND = [
 
 
 // Compilation des fonctions de spawn de zone
-fn_spawnRdmPatrols   = compile preprocessFile "functions\fn_spawnRdmPatrols.sqf";
+/*fn_spawnRdmPatrols   = compile preprocessFile "functions\fn_spawnRdmPatrols.sqf";
 fn_spawnFixedWeapons = compile preprocessFile "functions\fn_spawnFixedWeapons.sqf";
-fn_spawnGarnisons    = compile preprocessFile "functions\fn_spawnGarnisons.sqf";
+fn_spawnGarnisons    = compile preprocessFile "functions\fn_spawnGarnisons.sqf";*/
 
 //Spawn des hostiles
 [] spawn {
