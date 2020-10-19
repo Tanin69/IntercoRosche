@@ -15,7 +15,7 @@
 gdc_plutoDebug = true;
 
 //On adapte le nombre d'hostiles par rapport au nombre de joueurs
-//nbJoueurs = playersNumber west;
+nbJoueurs = playersNumber west;
 
 /*
 //Ajoute le cargo aux bagnoles
@@ -106,28 +106,28 @@ O_G_officer_F = instructeur armée régulière
 
 // Groupes PARAMIL. De 2 à 4 pax.
 GROUPE_PARAMIL_PETIT = [
-	["O_G_Soldier_lite_F","O_G_Soldier_F"],
+	["O_G_Soldier_lite_F","O_G_Soldier_LAT_F"],
 	["O_G_Soldier_lite_F", "O_G_Soldier_unarmed_F"],
 	["O_G_Soldier_AR_F", "O_G_Soldier_A_F"],
-	["O_G_Soldier_unarmed_F", "O_G_Soldier_F","O_G_Soldier_lite_F"],
+	["O_G_Soldier_LAT_F", "O_G_Soldier_F","O_G_Soldier_lite_F"],
 	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F"],
 	["O_G_Soldier_SL_F", "O_G_Soldier_LAT2_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F"]
 ];
 
 // Groupes PARAMIL. De 5 à 7 pax.
 GROUPE_PARAMIL_MOYEN = [
-	["O_G_Soldier_SL_F", "O_G_Soldier_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_LAT2_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_LAT2_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_lite_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_LAT_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_LAT_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F"],
 	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F" ]
 
 ];
 
 // Groupes PARAMIL. De 8 à 10 pax.
 GROUPE_PARAMIL_GRAND = [
-	["O_G_officer_F", "O_G_Soldier_LAT2_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_lite_F"],
-	["O_G_officer_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_AR_F","O_G_Soldier_LAT2_F"],
-	["rhs_vmf_flora_officer", "O_G_Soldier_lite_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F"]
+	["O_G_officer_F", "O_G_Soldier_LAT2_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_LAT_F","O_G_Soldier_lite_F"],
+	["O_G_officer_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_LAT_F", "O_G_Soldier_A_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_AR_F","O_G_Soldier_LAT2_F"],
+	["rhs_vmf_flora_officer", "O_G_Soldier_lite_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_LAT_F", "O_G_Soldier_lite_F"]
 ];
 
 
@@ -164,14 +164,20 @@ GROUPE_OPFOR_GRAND = [
 
 
 // Compilation des fonctions de spawn de zone
-/*fn_spawnRdmPatrols   = compile preprocessFile "functions\fn_spawnRdmPatrols.sqf";
+/*
+fn_spawnRdmPatrols   = compile preprocessFile "functions\fn_spawnRdmPatrols.sqf";
 fn_spawnFixedWeapons = compile preprocessFile "functions\fn_spawnFixedWeapons.sqf";
-fn_spawnGarnisons    = compile preprocessFile "functions\fn_spawnGarnisons.sqf";*/
+fn_spawnGarnisons    = compile preprocessFile "functions\fn_spawnGarnisons.sqf";
+*/
 
 //Spawn des hostiles
 [] spawn {
 	execVM "spawn_IA\spawnHostile_Suttorf_1.sqf";
 	execVM "spawn_IA\spawnHostile_Suttorf_2.sqf";
-    //execVM "spawn_IA\spawnHostile_2.sqf";
+	execVM "spawn_IA\spawnHostile_Suttorf_3.sqf";
+	execVM "spawn_IA\spawnHostile_Jarlitz_1.sqf";
+	execVM "spawn_IA\spawnHostile_Jarlitz_2.sqf";
+	execVM "spawn_IA\spawnHostile_Jarlitz_3.sqf";
+	execVM "spawn_IA\spawnHostile_Jarlitz_4.sqf";
 };
 
