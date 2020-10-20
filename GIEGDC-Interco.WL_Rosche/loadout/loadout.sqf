@@ -345,7 +345,7 @@ loadout_assMG = {
 loadout_lat = {
 	
 	_unit = _this select 0;
-	
+		
 	comment "Exported from Arsenal by tanin69";
 
 	comment "[!] UNIT MUST BE LOCAL [!]";
@@ -362,19 +362,24 @@ loadout_lat = {
 	removeGoggles _unit;
 
 	comment "Add weapons";
-	_unit addWeapon "rhs_weap_pm63";
+	_unit addWeapon "rhs_weap_akms";
 	_unit addPrimaryWeaponItem "rhs_acc_dtkakm";
-	_unit addPrimaryWeaponItem "rhs_30Rnd_762x39mm";
-	_unit addWeapon "rhs_weap_rpg26";
+	_unit addPrimaryWeaponItem "rhs_30Rnd_762x39mm_bakelite";
+	_unit addWeapon "rhs_weap_rpg7";
+	_unit addSecondaryWeaponItem "rhs_acc_pgo7v2";
+	_unit addSecondaryWeaponItem "rhs_rpg7_PG7V_mag";
 
 	comment "Add containers";
-	_unit forceAddUniform "rhs_uniform_flora_patchless";
-	_unit addVest "rhs_6b5_rifleman_khaki";
+	_unit forceAddUniform "rhsgref_uniform_dpm_olive";
+	_unit addVest "V_Chestrig_oli";
+	_unit addBackpack "rhs_rpg_empty";
 
 	comment "Add items to containers";
-	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm";};
-	for "_i" from 1 to 9 do {_unit addItemToVest "rhs_30Rnd_762x39mm";};
-	_unit addHeadgear "rhs_6b27m_green";
+	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
+	for "_i" from 1 to 8 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_OG7V_mag";};
+	_unit addGoggles "G_Bandanna_tan";
 
 	comment "Add items";
 	_unit linkItem "ItemMap";
@@ -661,15 +666,20 @@ loadout_paramil_AT = {
 	_unit addWeapon "rhs_weap_akms";
 	_unit addPrimaryWeaponItem "rhs_acc_dtkakm";
 	_unit addPrimaryWeaponItem "rhs_30Rnd_762x39mm_bakelite";
-	_unit addWeapon "rhs_weap_rpg26";
+	_unit addWeapon "rhs_weap_rpg7";
+	//_unit addSecondaryWeaponItem "rhs_acc_pgo7v2";
+	_unit addSecondaryWeaponItem "rhs_rpg7_PG7V_mag";
 
 	comment "Add containers";
 	_unit forceAddUniform "rhsgref_uniform_dpm_olive";
 	_unit addVest "V_Chestrig_oli";
+	_unit addBackpack "rhs_rpg_empty";
 
 	comment "Add items to containers";
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	for "_i" from 1 to 8 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
+	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_OG7V_mag";};
 	_unit addGoggles "G_Bandanna_tan";
 
 	comment "Add items";

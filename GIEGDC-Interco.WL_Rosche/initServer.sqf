@@ -171,5 +171,9 @@ GROUPE_OPFOR_GRAND = [
 	execVM "spawn_IA\spawnHostile_Jarlitz_2.sqf";
 	execVM "spawn_IA\spawnHostile_Jarlitz_3.sqf";
 	execVM "spawn_IA\spawnHostile_Jarlitz_4.sqf";
+	execVM "spawn_IA\spawnHostile_Klein_1.sqf";
+	execVM "spawn_IA\spawnHostile_Klein_2.sqf";
+	execVM "spawn_IA\spawnHostile_Klein_3.sqf";
+	execVM "spawn_IA\spawnHostile_Klein_4.sqf";
 };
 
