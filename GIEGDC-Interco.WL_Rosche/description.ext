@@ -34,3 +34,6 @@ saving = 0;
 
 // Débriefing
 #include "CfgDebrief.hpp"
+
+// ORBAT
+#include "CfgOrbat.hpp"
