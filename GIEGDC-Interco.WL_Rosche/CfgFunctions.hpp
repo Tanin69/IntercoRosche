@@ -8,6 +8,7 @@ class CfgFunctions
 			class spawnFixedWeapons {};
 			class spawnGarnisons {};
 			class spawnRdmPatrols {};
+			class spawnGrpTank {};
 		};
 
 		class caisse_loadout

@@ -181,3 +181,7 @@ GROUPE_OPFOR_GRAND = [
 	execVM "spawn_IA\spawnHostile_Schlieckau_2.sqf";
 };
 
+["wp_blindes_1"] call int_fnc_spawnGrpTank;
+sleep 20;
+["wp_blindes_2"] call int_fnc_spawnGrpTank;
+
