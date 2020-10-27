@@ -52,6 +52,22 @@ class CfgORBAT
 			// color[] = {0,0,1,1}; // Bravo color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
 			description= "Composante BRAVO du Groupe d'Intervention Européen"; // A brief description of the group or unit.
 
+			class 1erRPIMa
+			{ // 1erRPIMa
+				id = 3;
+				type = "Recon";
+				size = "Regiment";
+				side = "West";
+				commander = "NATOMen";
+				commanderRank = "Lieutenant";
+				texture = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
+				insignia = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
+				text = "1er RPIMa";
+				textShort = "1er RPIMa";
+				color[] = {255,255,255,1};
+				description= "Section du 1er RPIMa";
+			};
+
 			class 58thPR
 			{ // 58th pararescue
 				id = 3;
@@ -60,8 +76,8 @@ class CfgORBAT
 				side = "West";
 				commander = "NATOMen";
 				commanderRank = "Captain";
-				texture = __EVAL(getMissionPath "ORBAT\58thPR.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\58thPR.paa");
+				texture = __EVAL(getMissionPath "ORBAT\58thRS.paa");
+				insignia = __EVAL(getMissionPath "ORBAT\58thRS.paa");
 				text = "58th Rescue Squadron";
 				textShort = "58th RS";
 				color[] = {255,255,255,1};
@@ -91,73 +107,6 @@ class CfgORBAT
 				};
 			};
 
-			class 1erRPIMa
-			{ // 1erRPIMa
-				id = 3;
-				type = "Recon";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Lieutenant";
-				texture = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-				text = "1er RPIMa";
-				textShort = "1er RPIMa";
-				color[] = {255,255,255,1};
-				description= "Section du 1er RPIMa";
-			};
-
-			class 3rdCav
-			{ // 3rdCav
-				id = 3;
-				type = "MechanizedInfantry";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Captain";
-				texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
-				text = "3rd Cavalry Regiment";
-				textShort = "3rd Cavalry";
-				color[] = {255,255,255,1};
-				description= "Peloton du 7th Cavalry Regiment";
-				assets[] = {
-					{RHS_M2A3_BUSKI_wd, 3}
-				};
-			};
-
-			class 24RI
-			{ // 24RI
-				id = 3;
-				type = "Infantry";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Lieutenant";
-				texture = __EVAL(getMissionPath "ORBAT\24RI.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\24RI.paa");
-				text = "24eme Régiment d'infanterie";
-				textShort = "24eme RI";
-				color[] = {255,255,255,1};
-				description= "Section du 24eme Régiment d'infanterie";
-			};
-
-			class 92RI
-			{ // 92RI
-				id = 3;
-				type = "Infantry";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Lieutenant";
-				texture = __EVAL(getMissionPath "ORBAT\92RI.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\92RI.paa");
-				text = "92eme Régiment d'infanterie";
-				textShort = "92eme RI";
-				color[] = {255,255,255,1};
-				description= "Section du 92eme Régiment d'infanterie";
-			};
-
 			class 126RI
 			{ // 126RI
 				id = 3;
@@ -172,6 +121,57 @@ class CfgORBAT
 				textShort = "126eme RI";
 				color[] = {255,255,255,1};
 				description= "Section du 126eme Régiment d'infanterie";
+
+				class 24RI
+				{ // 24RI
+					id = 3;
+					type = "Infantry";
+					size = "Regiment";
+					side = "West";
+					commander = "NATOMen";
+					commanderRank = "Lieutenant";
+					texture = __EVAL(getMissionPath "ORBAT\24RI.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\24RI.paa");
+					text = "24eme Régiment d'infanterie";
+					textShort = "24eme RI";
+					color[] = {255,255,255,1};
+					description= "Section du 24eme Régiment d'infanterie";
+				};
+
+				class 92RI
+				{ // 92RI
+					id = 3;
+					type = "Infantry";
+					size = "Regiment";
+					side = "West";
+					commander = "NATOMen";
+					commanderRank = "Lieutenant";
+					texture = __EVAL(getMissionPath "ORBAT\92RI.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\92RI.paa");
+					text = "92eme Régiment d'infanterie";
+					textShort = "92eme RI";
+					color[] = {255,255,255,1};
+					description= "Section du 92eme Régiment d'infanterie";
+				};
+
+				class 3rdCav
+				{ // 3rdCav
+					id = 3;
+					type = "MechanizedInfantry";
+					size = "Regiment";
+					side = "West";
+					commander = "NATOMen";
+					commanderRank = "Captain";
+					texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+					text = "3rd Cavalry Regiment";
+					textShort = "3rd Cavalry";
+					color[] = {255,255,255,1};
+					description= "Peloton du 3rd Cavalry Regiment";
+					assets[] = {
+						{RHS_M2A3_BUSKI_wd, 3}
+					};
+				};
 			};
 
  		};

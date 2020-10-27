@@ -8,6 +8,12 @@ class CfgFunctions
 			class spawnFixedWeapons {};
 			class spawnGarnisons {};
 			class spawnRdmPatrols {};
-		}
-	}
-}
+		};
+
+		class caisse_loadout
+		{
+			file="functions\caisse_loadout";
+			class initCaisseLoadout {};
+		};
+	};
+};

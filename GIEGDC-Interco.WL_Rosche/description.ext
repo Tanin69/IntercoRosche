@@ -37,3 +37,6 @@ saving = 0;
 
 // ORBAT
 #include "CfgOrbat.hpp"
+
+// Patch d'épaule
+#include "CfgUnitsInsigna.hpp"
