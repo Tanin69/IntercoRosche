@@ -12,6 +12,3 @@ private _tbMrk = allMapMarkers select {["mrk", _x, true] call BIS_fnc_inString};
 //["mk_spawn",_tbObjSpawn,"MAJOR",_tbMrk] call GDC_fnc_chooseSpawnPos;
 //Spawn au choix des joueurs
 //["mk_spawn",[],"MAJOR",["marker_NoSpawn"],nil,10] call GDC_fnc_chooseSpawnPos;
-
-//Lance le briefing
-execVM "briefing.sqf";
