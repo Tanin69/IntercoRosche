@@ -563,3 +563,82 @@ private _int_action_loadout_58th_RS_medic = [
 	["ACE_MainActions", "_int_action_loadout_58th_RS"],
 	_int_action_loadout_58th_RS_medic
 ] call ace_interact_menu_fnc_addActionToObject;
+
+/********************************************************************** 
+************************* ACTION 1er RPIMa ********************************
+**********************************************************************/
+private _int_action_loadout_1er_RPIMa = [
+	"_int_action_loadout_1er_RPIMa",
+	"Loadout 58th RS",
+	"ORBAT\1erRPIMa.paa",
+	{ },
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+private _int_action_loadout_1er_RPIMa_pilote = [
+	"_int_action_loadout_1er_RPIMa_chef_de_section",
+	"Pilote",
+	"a3\ui_f\data\igui\cfg\actions\getincommander_ca.paa",
+	{ },
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+private _int_action_loadout_1er_RPIMa_atrilleur = [
+	"_int_action_loadout_1er_RPIMa_atrilleur",
+	"Artilleur",
+	"a3\ui_f\data\igui\cfg\WeaponIcons\mg_ca.paa",
+	{ },
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+private _int_action_loadout_1er_RPIMa_chef_equipe = [
+	"_int_action_loadout_1er_RPIMa_chef_equipe",
+	"Chef d'équipe",
+	"a3\ui_f\data\igui\cfg\actions\getincommander_ca.paa",
+	{ },
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+private _int_action_loadout_1er_RPIMa_medic = [
+	"_int_action_loadout_1er_RPIMa_medic",
+	"Tireur medic",
+	"a3\ui_f\data\igui\cfg\actions\heal_ca.paa",
+	{ },
+	{true}
+] call ace_interact_menu_fnc_createAction;
+
+// Ajout des actions 24 RI
+[ // Catégorie
+	_box,
+	0,
+	["ACE_MainActions"],
+	_int_action_loadout_1er_RPIMa
+] call ace_interact_menu_fnc_addActionToObject;
+
+[ // Pilote
+	_box,
+	0,
+	["ACE_MainActions", "_int_action_loadout_1er_RPIMa"],
+	_int_action_loadout_1er_RPIMa_pilote
+] call ace_interact_menu_fnc_addActionToObject;
+
+[ // Artilleur
+	_box,
+	0,
+	["ACE_MainActions", "_int_action_loadout_1er_RPIMa"],
+	_int_action_loadout_1er_RPIMa_atrilleur
+] call ace_interact_menu_fnc_addActionToObject;
+
+[ // Chef d'équipe
+	_box,
+	0,
+	["ACE_MainActions", "_int_action_loadout_1er_RPIMa"],
+	_int_action_loadout_1er_RPIMa_chef_equipe
+] call ace_interact_menu_fnc_addActionToObject;
+
+[ // Medic
+	_box,
+	0,
+	["ACE_MainActions", "_int_action_loadout_1er_RPIMa"],
+	_int_action_loadout_1er_RPIMa_medic
+] call ace_interact_menu_fnc_addActionToObject;
