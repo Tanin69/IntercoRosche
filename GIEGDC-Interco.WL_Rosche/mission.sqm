@@ -8,11 +8,11 @@ class EditorData
 	toggles=1033;
 	class ItemIDProvider
 	{
-		nextID=3449;
+		nextID=3450;
 	};
 	class MarkerIDProvider
 	{
-		nextID=64;
+		nextID=65;
 	};
 	class LayerIndexProvider
 	{
@@ -37488,24 +37488,26 @@ class Mission
 		class Item61
 		{
 			dataType="Marker";
-			position[]={11752.764,28.82,6192.168};
-			name="mrkWpMeca_1_1";
-			type="mil_triangle";
-			colorName="ColorBrown";
-			angle=269.32693;
-			id=3441;
-			atlOffset=-0.00011444092;
-		};
-		class Item62
-		{
-			dataType="Marker";
-			position[]={11575.621,25.421984,6114.7861};
+			position[]={10797.952,25.928802,5999.9297};
 			name="mrkWpMeca_1_2";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			angle=269.32684;
 			id=3442;
-			atlOffset=-0.00011444092;
+			atlOffset=-9.3677979;
+		};
+		class Item62
+		{
+			dataType="Marker";
+			position[]={11732.318,28.438095,6183.3667};
+			name="mrkWpMeca_1_1";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=134.10345;
+			b=88.140999;
+			angle=50.314724;
+			id=3449;
+			atlOffset=3.8146973e-006;
 		};
 	};
 	class Connections

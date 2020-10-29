@@ -38,12 +38,16 @@ _grpInf = [[0,0,0], _side, selectRandom GROUPE_OPFOR_MOYEN] call GDC_fnc_lucySpa
 _tbVeh = [getMarkerpos (_tbWP#0), _vehHeading, _clsVeh, _grpInf] call BIS_fnc_spawnVehicle; 
 {_x moveInCargo (_tbVeh#0)} forEach units _grpInf; 
 
-//On déplace le groupe sur le marqeur d'unload, on unload les fantassins dans une zone safe. 
+//On déplace le groupe sur le marqeur d'unload, on unload les fantassins dans une zone claire d'ENI (thanks to Morbakos). 
 //Tester ce qu'il se passe si le véhicule se fait intercepter en chemin ! 
-_grpInf setBehaviour "CARELESS"; 
-_wp = _grpInf addWaypoint [getMarkerpos (_tbWP#1), -1];
-_wp setWaypointType "UNLOAD";
+_unloadPos = [_tbWP#1,10,opfor] call int_fnc_findClearZoneInArea;
+_wpUnload = _grpInf addWaypoint [_unloadPos, -1];
+_wpUnload setWaypointBehaviour "CARELESS";
+_wpUnload setWaypointType "UNLOAD";
+_wpUnload setWaypointStatements ["true","[(group this)] spawn {params['_grp'];while {true} do {assignedVehicle leader _grp doFollow leader _grp;sleep 10;}}"];
 
-_grpInf setBehaviour "AWARE"; 
-_wp = _grpInf addWaypoint [getMarkerpos (_tbWP#2), -1];
-_wp setWaypointType "SAD";
+//On envoie le groupe méca sur le dernier WP
+_wpDest = _grpInf addWaypoint [getMarkerpos (_tbWP#2), -1];
+_wpDest setWaypointBehaviour "AWARE";
+_wpDest setWaypointType "SAD";
+//_wpDest setWaypointStatements ["true","while {true} do {assignedVehicle leader (group this) doFollow leader (group this);sleep 20;}"];
