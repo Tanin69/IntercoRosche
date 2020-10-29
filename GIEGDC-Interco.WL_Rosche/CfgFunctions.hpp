@@ -17,6 +17,12 @@ class CfgFunctions
 			class initCaisseLoadout {};
 		};
 
+		class divers
+		{
+			file="functions\misc";
+			class findClearZoneInArea {};
+		}
+
 		class loadout
 		{
 			file="loadout";
