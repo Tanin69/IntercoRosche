@@ -153,8 +153,7 @@ GROUPE_OPFOR_PETIT = [
 
 // Groupes Ukraine. 8 pax (escouade).
 GROUPE_OPFOR_MOYEN = [
-	["rhs_vmf_flora_sergeant", "rhs_vmf_flora_LAT","rhs_vmf_flora_LAT", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_machinegunner_assistant"],
-	["rhs_vmf_flora_machinegunner", "rhs_vmf_flora_grenadier","rhs_vmf_flora_medic"]
+	["rhs_vmf_flora_sergeant", "rhs_vmf_flora_LAT","rhs_vmf_flora_LAT", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_machinegunner_assistant","rhs_vmf_flora_machinegunner", "rhs_vmf_flora_grenadier","rhs_vmf_flora_medic"]
 ];
 
 // Groupes Ukraine. 14 pax (grosse escouade).
@@ -162,7 +161,7 @@ GROUPE_OPFOR_GRAND = [
 	["rhs_vmf_flora_officer","rhs_vmf_flora_medic", "rhs_vmf_flora_sergeant","rhs_vmf_flora_LAT", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_machinegunner","rhs_vmf_flora_machinegunner_assistant","rhs_vmf_flora_grenadier","rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_LAT","rhs_vmf_flora_rifleman","rhs_vmf_flora_rifleman"]
 ];
 
-//Spawn des hostiles
+//Spawn des hostiles -> pour les tests, on spawn tout en masse, mais il faudra faire les spawn en fonction du plan
 [] spawn {
 	execVM "spawn_IA\spawnHostile_Suttorf_1.sqf";
 	execVM "spawn_IA\spawnHostile_Suttorf_2.sqf";
@@ -181,7 +180,11 @@ GROUPE_OPFOR_GRAND = [
 	execVM "spawn_IA\spawnHostile_Schlieckau_2.sqf";
 };
 
-["wp_blindes_1"] call int_fnc_spawnGrpTank;
-sleep 20;
-["wp_blindes_2"] call int_fnc_spawnGrpTank;
+[["mrkSpMeca_1","mrkWpMeca_1_1","mrkWpMeca_1_2"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+
+["mrkWpTanks_1"] call int_fnc_spawnGrpTank;
+sleep 60;
+["mrkWpTanks_2"] call int_fnc_spawnGrpTank;
+sleep 60;
+["mrkWpTanks_3"] call int_fnc_spawnGrpTank;
 

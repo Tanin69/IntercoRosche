@@ -6,16 +6,16 @@
 params ["_wp"];
 
 // Convoy formation. 
-_veh = "rhs_t72bc_tv" createVehicle getMarkerPos "spawnT72_1"; 
+_veh = "rhs_t72bc_tv" createVehicle getMarkerPos "mrkCy1_1"; 
 createVehicleCrew _veh;
 _veh setConvoySeparation 50; 
  
-_veh2 = "rhs_t72bc_tv" createVehicle getMarkerPos "spawnT72_2"; 
+_veh2 = "rhs_t72bc_tv" createVehicle getMarkerPos "mrkCy1_2"; 
 createVehicleCrew _veh2; 
 _veh2crew = crew _veh2; 
 _veh2 setConvoySeparation 50;
  
-_veh3 = "rhs_zsu234_aa" createVehicle getMarkerPos "spawnZSU"; 
+_veh3 = "rhs_zsu234_aa" createVehicle getMarkerPos "mrkCy1_3"; 
 createVehicleCrew _veh3; 
 _veh3crew = crew _veh3; 
 _veh3 setConvoySeparation 50; 

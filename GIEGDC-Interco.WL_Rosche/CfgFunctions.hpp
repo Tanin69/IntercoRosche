@@ -9,6 +9,7 @@ class CfgFunctions
 			class spawnGarnisons {};
 			class spawnRdmPatrols {};
 			class spawnGrpTank {};
+			class spawnMechInfantry {};
 		};
 
 		class caisse_loadout
