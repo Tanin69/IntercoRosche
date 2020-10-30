@@ -47,7 +47,7 @@ _veh3 addEventHandler ["FiredNear", {
 	(group _unit) setFormation "LINE";
 }];
 
-// Convoy movement, gets on AWARE behavior at the end of the movement
+// Convoy movement, gets on SAD behavior at the end of the movement
 _waypoint = _vehgrp addWaypoint [getMarkerPos _wp,0]; 
 _waypoint setWaypointType "Move";
-_waypoint setWaypointStatements ["true","(group this) setBehaviour 'AWARE';(group this) setFormation 'LINE'"];
+_waypoint setWaypointStatements ["true","(group this) setBehaviour 'SAD';(group this) setFormation 'LINE'"];

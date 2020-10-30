@@ -8,7 +8,7 @@ class EditorData
 	toggles=1033;
 	class ItemIDProvider
 	{
-		nextID=3450;
+		nextID=3466;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=465;
+		nextID=525;
 	};
 	class Camera
 	{
@@ -869,7 +869,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=63;
+		items=69;
 		class Item0
 		{
 			dataType="Object";
@@ -36374,43 +36374,41 @@ class Mission
 						class Item3
 						{
 							dataType="Marker";
-							position[]={9221.248,44.583,6246.9429};
+							position[]={6462.6895,27.943838,7495.395};
 							name="mrkWpTanks_1";
 							type="mil_triangle";
 							colorName="ColorBrown";
-							angle=254.22092;
+							angle=264.83713;
 							id=3408;
-							atlOffset=-1.2489319;
+							atlOffset=-1.9073486e-006;
 						};
 						class Item4
 						{
 							dataType="Marker";
-							position[]={8297.5459,26.926001,8381.4756};
+							position[]={5992.0859,21.960907,3844.4724};
 							name="mrkWpTanks_2";
 							type="mil_triangle";
 							colorName="ColorBrown";
-							angle=254.22092;
+							angle=274.01648;
 							id=3415;
-							atlOffset=-3.2082977;
 						};
 						class Item5
 						{
 							dataType="Marker";
-							position[]={9734.0098,32.462002,3642.3159};
+							position[]={6497.7827,26.969999,5844.7695};
 							name="mrkWpTanks_3";
 							type="mil_triangle";
 							colorName="ColorBrown";
-							angle=254.22092;
+							angle=260.4353;
 							id=3417;
-							atlOffset=-4.330616;
 						};
 					};
 					id=3420;
-					atlOffset=-13.628807;
+					atlOffset=-0.26016426;
 				};
 			};
 			id=2805;
-			atlOffset=0.27237701;
+			atlOffset=1.2041283;
 		};
 		class Item44
 		{
@@ -37477,37 +37475,106 @@ class Mission
 		class Item60
 		{
 			dataType="Marker";
-			position[]={11899.581,30.989,6309.9668};
+			position[]={13472.206,33.749001,7116.3472};
 			name="mrkSpMeca_1";
 			type="mil_box";
 			colorName="ColorBrown";
-			angle=229.21693;
+			angle=260.59387;
 			id=3440;
-			atlOffset=0.00012588501;
+			atlOffset=-0.45586777;
 		};
 		class Item61
 		{
 			dataType="Marker";
-			position[]={10797.952,25.928802,5999.9297};
-			name="mrkWpMeca_1_2";
+			position[]={6055.7598,22.209686,6455.1636};
+			name="mrkWpSADMeca_1";
 			type="mil_triangle";
 			colorName="ColorBrown";
-			angle=269.32684;
+			angle=273.48022;
 			id=3442;
-			atlOffset=-9.3677979;
+			atlOffset=1.7166138e-005;
 		};
 		class Item62
 		{
 			dataType="Marker";
-			position[]={11732.318,28.438095,6183.3667};
-			name="mrkWpMeca_1_1";
+			position[]={7271.4238,27.363256,6498.5737};
+			name="mrkWpUnloadMeca_1";
 			markerType="RECTANGLE";
 			type="rectangle";
-			a=134.10345;
-			b=88.140999;
-			angle=50.314724;
+			a=184.53198;
+			b=398.81976;
+			angle=0.21115528;
 			id=3449;
-			atlOffset=3.8146973e-006;
+		};
+		class Item63
+		{
+			dataType="Marker";
+			position[]={13510.447,34.296631,7127.9961};
+			name="mrkSpMeca_2";
+			type="mil_box";
+			colorName="ColorBrown";
+			angle=260.59387;
+			id=3460;
+			atlOffset=-0.49323273;
+		};
+		class Item64
+		{
+			dataType="Marker";
+			position[]={13543.217,34.527012,7137.3579};
+			name="mrkSpMeca_3";
+			type="mil_box";
+			colorName="ColorBrown";
+			angle=260.59387;
+			id=3461;
+			atlOffset=-0.45586777;
+		};
+		class Item65
+		{
+			dataType="Marker";
+			position[]={6644.4609,8.0949707,8602.9014};
+			name="mrkWpUnloadMeca_2";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=495.7738;
+			b=233.42743;
+			angle=61.030304;
+			id=3462;
+			atlOffset=-10.110023;
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={8549.8008,39.851318,5907.0972};
+			name="mrkWpUnloadMeca_3";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=499.24899;
+			b=233.42743;
+			angle=348.69888;
+			id=3463;
+			atlOffset=-7.261097;
+		};
+		class Item67
+		{
+			dataType="Marker";
+			position[]={5768.1606,17.967285,8138.855};
+			name="mrkWpSADMeca_2";
+			type="mil_triangle";
+			colorName="ColorBrown";
+			angle=269.32684;
+			id=3464;
+			atlOffset=-1.1117649;
+		};
+		class Item68
+		{
+			dataType="Marker";
+			position[]={7397.6826,28.362411,5686.4268};
+			name="mrkWpSADMeca_3";
+			type="mil_triangle";
+			colorName="ColorBrown";
+			angle=269.32684;
+			id=3465;
+			atlOffset=1.9345036;
 		};
 	};
 	class Connections

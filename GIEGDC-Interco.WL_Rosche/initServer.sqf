@@ -180,11 +180,18 @@ GROUPE_OPFOR_GRAND = [
 	execVM "spawn_IA\spawnHostile_Schlieckau_2.sqf";
 };
 
-[["mrkSpMeca_1","mrkWpMeca_1_1","mrkWpMeca_1_2"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
-
 ["mrkWpTanks_1"] call int_fnc_spawnGrpTank;
-sleep 60;
+sleep 90;
 ["mrkWpTanks_2"] call int_fnc_spawnGrpTank;
-sleep 60;
+sleep 90;
 ["mrkWpTanks_3"] call int_fnc_spawnGrpTank;
+sleep 90;
+
+[["mrkSpMeca_1","mrkWpUnloadMeca_1","mrkWpSADMeca_1"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+sleep 60;
+[["mrkSpMeca_2","mrkWpUnloadMeca_2","mrkWpSADMeca_2"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+sleep 60;
+[["mrkSpMeca_3","mrkWpUnloadMeca_3","mrkWpSADMeca_3"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+
+
 
