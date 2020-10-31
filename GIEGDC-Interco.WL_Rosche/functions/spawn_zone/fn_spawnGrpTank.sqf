@@ -25,6 +25,8 @@ _vehgrp = group driver _veh;
 _vehgrp setBehaviour "CARELESS";
 _vehgrp setFormation "COLUMN";
 
+_vehgrp setVariable ["PLUTO_ORDER","QRF"];
+
 _veh2crew join _vehgrp; 
 _veh3crew join _vehgrp; 
 

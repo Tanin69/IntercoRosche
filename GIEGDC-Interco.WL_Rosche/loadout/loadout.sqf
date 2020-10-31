@@ -326,13 +326,13 @@ loadout_assMG = {
 	_unit forceAddUniform "rhs_uniform_flora_patchless";
 	_unit addVest "rhs_6b5_khaki";
 	_unit addBackpack "rhs_sidor";
+	_unit addHeadgear "rhs_6b27m_green";
 
 	comment "Add items to containers";
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_Savz58";};
 	for "_i" from 1 to 5 do {_unit addItemToVest "rhs_30Rnd_762x39mm_Savz58";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR_7BZ3";};
-	_unit addHeadgear "rhs_6b27m_green";
-
+	
 	comment "Add items";
 	_unit linkItem "ItemMap";
 	_unit linkItem "ItemCompass";
@@ -370,9 +370,10 @@ loadout_lat = {
 	_unit addSecondaryWeaponItem "rhs_rpg7_PG7V_mag";
 
 	comment "Add containers";
-	_unit forceAddUniform "rhsgref_uniform_dpm_olive";
-	_unit addVest "V_Chestrig_oli";
+	_unit forceAddUniform "rhs_uniform_flora_patchless";
+	_unit addVest "rhs_6b5_khaki";
 	_unit addBackpack "rhs_rpg_empty";
+	_unit addHeadgear "rhs_6b27m_green";
 
 	comment "Add items to containers";
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};

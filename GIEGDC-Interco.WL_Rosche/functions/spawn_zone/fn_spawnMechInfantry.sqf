@@ -44,7 +44,7 @@ _unloadPos = [_tbWP#1,200,opfor] call int_fnc_findClearZoneInArea;
 _wpUnload = _grpInf addWaypoint [_unloadPos, -1];
 _wpUnload setWaypointBehaviour "CARELESS";
 _wpUnload setWaypointType "UNLOAD";
-_wpUnload setWaypointStatements ["true","[(group this)] spawn {params['_grp'];while {true} do {assignedVehicle leader _grp doFollow leader _grp;sleep 20;}}"];
+_wpUnload setWaypointStatements ["true","[(group this)] spawn {params['_grp'];while {true} do {assignedVehicle leader _grp doFollow leader _grp;_grp setVariable ['PLUTO_ORDER','QRF'];sleep 20;}}"];
 
 //On envoie le groupe méca sur le dernier WP
 _wpDest = _grpInf addWaypoint [getMarkerpos (_tbWP#2), -1];
