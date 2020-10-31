@@ -95,6 +95,9 @@ GROUPE_OPFOR_GRAND = [
 [0.5,"mkr_spawn_static_unit",true,600.0,false,3600.0,true,true,"LIEUTENANT"] call GDC_fnc_lucyInit;
 ["loadout\loadout.sqf"] call GDC_fnc_lucyConfigLoadoutIA;
 
+//Spawn des unités régulières sur Rosche
+
+
 //Assaut lourd des hostiles : à déclencher par un timer ou un événement !
 if (isServer) then {
 	//Vague d'assaut des blindés lourds
@@ -112,7 +115,7 @@ if (isServer) then {
 	[["mrkSpMeca_3","mrkWpUnloadMeca_3","mrkWpSADMeca_3"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
 };
 
-//Spawn des hostiles -> pour les tests, on spawn tout en masse, mais il faudra faire les spawn en fonction du plan
+//Spawn des paramil -> pour les tests, on spawn tout en masse, mais il faudra faire les spawn en fonction du plan
 ["spawn_IA\spawnHostile_Suttorf_1.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Suttorf_2.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Suttorf_3.sqf"] call GDC_fnc_lucyExecVMHC;
@@ -128,6 +131,9 @@ if (isServer) then {
 ["spawn_IA\spawnHostile_Molbath_2.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Schlieckau_1.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Schlieckau_2.sqf"] call GDC_fnc_lucyExecVMHC;
+["spawn_IA\spawnHostile_Rosche_0.sqf"] call GDC_fnc_lucyExecVMHC;
+["spawn_IA\spawnHostile_Rosche_1.sqf"] call GDC_fnc_lucyExecVMHC; //A spawner après l'activation du build_1 de Rosche
+["spawn_IA\spawnHostile_Rosche_2.sqf"] call GDC_fnc_lucyExecVMHC; //A spawner après l'activation du build_2 de Rosche
 
 
 //Spawn au choix des joueurs
