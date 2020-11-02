@@ -24,6 +24,13 @@ class CfgFunctions
 			class findClearZoneInArea {};
 		}
 
+		class fuite
+		{
+			file="functions\fleeing";
+			class fleeing {};
+			class doFleeing {};
+		};
+
 		class loadout
 		{
 			file="loadout";
