@@ -95,27 +95,9 @@ GROUPE_OPFOR_GRAND = [
 [0.5,"mkr_spawn_static_unit",true,600.0,false,3600.0,true,true,"LIEUTENANT"] call GDC_fnc_lucyInit;
 ["loadout\loadout.sqf"] call GDC_fnc_lucyConfigLoadoutIA;
 
-//Spawn des unités régulières sur Rosche
+/* Spawn des hostiles */
 
-
-//Assaut lourd des hostiles : à déclencher par un timer ou un événement !
-if (isServer) then {
-	//Vague d'assaut des blindés lourds
-	["mrkWpTanks_1"] call int_fnc_spawnGrpTank;
-	sleep 90;
-	["mrkWpTanks_2"] call int_fnc_spawnGrpTank;
-	sleep 90;
-	["mrkWpTanks_3"] call int_fnc_spawnGrpTank;
-	sleep 300;
-	//Vague d'assaut de l'infanterie mécanisée
-	[["mrkSpMeca_1","mrkWpUnloadMeca_1","mrkWpSADMeca_1"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
-	sleep 60;
-	[["mrkSpMeca_2","mrkWpUnloadMeca_2","mrkWpSADMeca_2"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
-	sleep 60;
-	[["mrkSpMeca_3","mrkWpUnloadMeca_3","mrkWpSADMeca_3"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
-};
-
-//Spawn des paramil -> pour les tests, on spawn tout en masse, mais il faudra faire les spawn en fonction du plan
+//T0 : vague 1 : l'armée régulière a installé ses premiers éléments sur Rosche et les paramils se sont fortifiés sur les villages de Suttorf, Jarlitz, Klein machin, Molbath et Schliekau 
 ["spawn_IA\spawnHostile_Suttorf_1.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Suttorf_2.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Suttorf_3.sqf"] call GDC_fnc_lucyExecVMHC;
@@ -132,8 +114,38 @@ if (isServer) then {
 ["spawn_IA\spawnHostile_Schlieckau_1.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Schlieckau_2.sqf"] call GDC_fnc_lucyExecVMHC;
 ["spawn_IA\spawnHostile_Rosche_0.sqf"] call GDC_fnc_lucyExecVMHC;
+
+//T1, petit matin, au lever du jour : vague 2 : des éléments paramil viennent harceler les avant-postes BLUFOR, histoire de les pourrir et d'éviter que l'OTAN s'organise pépère
+//Probablement à déclencher sur trigger d'occupation des postes avancés
+// -> A intégrer par Morbakos ?
+["spawn_IA\spawnHostile_AssautParamil.sqf"] call GDC_fnc_lucyExecVMHC;
+
+
+//T2, phase 3 : assaut lourd des hostiles
+//Probablement à déclencher 5 minutes après la vague 2, car les blindés mettent à peu près 15 minutes à arriver sur leur zone de combat
+if (isServer) then {
+	//Vague d'assaut des blindés lourds
+	["mrkWpTanks_1"] call int_fnc_spawnGrpTank;
+	sleep 90;
+	["mrkWpTanks_2"] call int_fnc_spawnGrpTank;
+	sleep 90;
+	["mrkWpTanks_3"] call int_fnc_spawnGrpTank;
+	sleep 300;
+	//Vague d'assaut de l'infanterie mécanisée
+	[["mrkSpMeca_1","mrkWpUnloadMeca_1","mrkWpSADMeca_1"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+	sleep 60;
+	[["mrkSpMeca_2","mrkWpUnloadMeca_2","mrkWpSADMeca_2"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+	sleep 60;
+	[["mrkSpMeca_3","mrkWpUnloadMeca_3","mrkWpSADMeca_3"],opfor,GROUPE_OPFOR_MOYEN,nil,230] spawn int_fnc_spawnMechInfantry;
+};
+
+//T2 + 60 minutes : la position de Rosche se renforce
 ["spawn_IA\spawnHostile_Rosche_1.sqf"] call GDC_fnc_lucyExecVMHC; //A spawner après l'activation du build_1 de Rosche
+//T2 + 90 minutes : la position de Rosche se renforce
 ["spawn_IA\spawnHostile_Rosche_2.sqf"] call GDC_fnc_lucyExecVMHC; //A spawner après l'activation du build_2 de Rosche
+
+//T3, phase 4 : prise de l'aéroport par l'infanterie méca sous couverture des blindés lourds.
+//Cette phase est fictive car si la phase 3 est une réussite, c'est un échec mission pour les BLUFOR
 
 
 //Spawn au choix des joueurs

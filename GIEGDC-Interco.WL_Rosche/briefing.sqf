@@ -65,15 +65,14 @@ Vous ne réussissez aucun objectif et/ou tout le monde est mort<br/><br/>
 
 "]];
 
-player createDiaryRecord ["Diary", ["Situation", "
-24 juin 2024, vers 3h00 du matin. Vous avez marché toute la nuit pour arriver sur la zone de combat. Le jour est en train de se lever.
-
+player createDiaryRecord ["Diary", ["Situation générale", "
+Hier, des groupes paramilitaires ont envahi la ville de Rosche, semant la panique parmi la population. La Police allemande a eu pour consigne d’organiser l’évacuation des civils et s’est retirée avec eux, sans engager de combat. L’ensemble de la zone d’opération est vidée de sa population.<br />
+Les paramiltaires ont eu le champ libre et se sont fortifiés sur les villes de...<br />
+Pendant ce temps, les troupes régulières ont commencé à installer une base avancée sur Rosche</br />.
 "]]; 
 
 player createDiaryRecord ["Diary", ["Contexte", "
-A force de voter 'sécurité', les polonais ont hérité d'un gouvernement autoritaire qui a tourné de façon sournoise à la dictature.<br/><br/>
-Après 10 ans de régression sociale, politique et intellectuelle, la population commence à en avoir sa dose des crétins qui pensent pouvoir penser pour eux.<br/><br/>
-Depuis près d'un siècle, la belle région de Livonia a regardé passer les chars nazis, de l'Armée rouge, l'installation des militaires du régime... Tout ça en gardant le nez planté dans ses champs.<br/><br/>
-C'est pourtant là, au plus profond de votre pays, que vous avez décidé de lancer la libération.<br/><br/>
-Une seule <marker name ='marker_NoSpawn'>zone militaire</marker> garde la province, c'est donc l'endroit idéal pour faire une action d'éclat.
+4 Juillet 2007 : plusieurs milliers de paramilitaires ont fait une incursion massive à plusieurs endroits de la frontière est de l’Allemagne.<br />
+Ils ont été rejoints quelques heures après par des éléments réguliers, probablement de nationalité ukrainienne, qui ont traversé la Pologne sans coup férir.<br />
+La situation géopolitique étant complexe et tendue, l’OTAN n’a pas pu réagir immédiatement : les troupes hostiles ont eu près de 24 heures pour s’installer.
 "]];

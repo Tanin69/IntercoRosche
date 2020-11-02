@@ -14,6 +14,9 @@ private _mrkInitial = createMarker [
 private _distanceFromToParamilPos = (getMarkerPos _mrkInitial) distance2D (getMarkerPos "paramil_pos");
 private _range = _distanceFromToParamilPos / 10;
 
+// Clear existing waypoints
+[_group] call CBA_fnc_clearWaypoints;
+
 for "_i" from 1 to 10 do 
 {
 	private _wpPos = [];

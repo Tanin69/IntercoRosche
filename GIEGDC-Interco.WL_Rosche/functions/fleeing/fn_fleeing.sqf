@@ -3,6 +3,9 @@
 	
 	Description:
 		Initialise le module de fuite des groupes paramilitaires.
+
+		Pour qu'un groupe soit géré par la fonction : (group this) setVariable ["INT_groupIsParamil", true];
+
 		Les paramètres peuvent être définis pour chaque groupe, avec la commande suivante: 
 			(group this) setVariable ["coef_fuite_kia", [6, 8, 10]];
 		
