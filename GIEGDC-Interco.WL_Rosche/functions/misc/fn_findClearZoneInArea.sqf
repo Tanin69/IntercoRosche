@@ -2,7 +2,7 @@
 	Author: [GIE] Gavin "Morbakos" Sertix
 	
 	Description:
-		Retourne une position dans un marqueur à condition que cette dernière n'est pas d'hostile dans un rayon défini.
+		Retourne une position dans un marqueur à condition que cette dernière n'ait pas d'hostile dans un rayon défini.
 	
 	Parameter(s):
 		1: STRING - Le marqueur

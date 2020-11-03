@@ -1,10 +1,13 @@
 if (!isServer) exitWith {};
 
+<<<<<<< HEAD
 { // On désactive les objets de "Build_1" et "Build_2"
     private _obj = _x;
     _obj hideObjectGlobal true;
 } foreach (((getMissionLayerEntities "Build_1") select 0) + ((getMissionLayerEntities "Build_2") select 0));
 
+=======
+>>>>>>> a41fa7ae830142dcdd55f26c9e948cc0f5452fe3
 private _renforcement_1 = 60;
 private _renforcement_2 = 30;
 private _condition_renforcement = {true};
@@ -49,14 +52,24 @@ PHASE_MISSION = 1;
 //////////////////////////////////////////////////////////////
 //		Dans cette phase, les paramils lancent l'assaut		//
 //////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 ["spawn_IA\spawnHostile_AssautParamil.sqf"] call GDC_fnc_lucyExecVMHC;
+=======
+
+// FONCTION de Tanin à appeler
+
+>>>>>>> a41fa7ae830142dcdd55f26c9e948cc0f5452fe3
 
 /********************
 *		PHASE 2		*
 *********************/
 waitUntil { sleep 1; PHASE_MISSION == 2;};
 //////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 //		Phase d'assaut avec les véhicules lourds et méca		//
+=======
+//		Phase de renfort avec les véhicules lourds et méca		//
+>>>>>>> a41fa7ae830142dcdd55f26c9e948cc0f5452fe3
 //////////////////////////////////////////////////////////////////
 
 //Vague d'assaut des blindés lourds
