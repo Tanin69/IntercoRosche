@@ -22,6 +22,7 @@ class CfgFunctions
 		{
 			file="functions\misc";
 			class findClearZoneInArea {};
+			class gamePhaseManager { postInit = 1; };
 		}
 
 		class fuite
