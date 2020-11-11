@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=5711;
+		nextID=5714;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={881.77673,42.073174,4616.3115};
-		dir[]={0.77279049,-0.38787767,-0.50259614};
-		up[]={0.32538038,0.92157131,-0.21161209};
-		aside[]={-0.5452469,7.022405e-006,-0.83839506};
+		pos[]={878.35846,49.2276,4625.6011};
+		dir[]={0.30375436,-0.78800112,0.53559554};
+		up[]={0.38874647,0.6156438,0.68545967};
+		aside[]={0.86987805,-2.2150925e-007,-0.493332};
 	};
 };
 binarizationWanted=0;
@@ -1267,7 +1267,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=149;
+		items=151;
 		class Item0
 		{
 			dataType="Logic";
@@ -2990,7 +2990,6 @@ class Mission
 									};
 									id=2185;
 									type="Land_ToolTrolley_01_F";
-									atlOffset=9.5367432e-007;
 								};
 								class Item55
 								{
@@ -18814,8 +18813,9 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={916.58661,15.13,4592.1479};
+				position[]={916.58698,15.13,4592.1479};
 			};
+			name="Zeus_1";
 			id=2804;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -19081,7 +19081,7 @@ class Mission
 							type="mil_dot";
 							colorName="ColorEAST";
 							id=2826;
-							atlOffset=0.080446243;
+							atlOffset=0.00026893616;
 						};
 						class Item16
 						{
@@ -21615,7 +21615,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={908.57379,15.13,4595.9136};
+				position[]={914.47253,15.13,4593.6982};
 			};
 			name="HC_Slot";
 			isPlayable=1;
@@ -21868,7 +21868,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""RHS_Incendiary_Fire"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=3512;
 			type="Logic";
-			atlOffset=0.20564461;
+			atlOffset=0.20560265;
 		};
 		class Item29
 		{
@@ -36937,7 +36937,7 @@ class Mission
 			};
 			id=2188;
 			type="rhsusf_m1043_w";
-			atlOffset=0.00021743774;
+			atlOffset=0.00023174286;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37302,7 +37302,7 @@ class Mission
 			};
 			id=2190;
 			type="rhsusf_m998_w_4dr_fulltop";
-			atlOffset=0.00045585632;
+			atlOffset=0.00046825409;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39025,6 +39025,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5493;
 			type="Logic";
+			atlOffset=1.1210403;
 		};
 		class Item122
 		{
@@ -40204,7 +40205,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5499;
 			type="Logic";
-			atlOffset=1.1210442;
+			atlOffset=1.1210403;
 		};
 		class Item128
 		{
@@ -40272,7 +40273,6 @@ class Mission
 			};
 			id=5507;
 			type="ModuleEffectsSmoke_F";
-			atlOffset=0.30028534;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40535,7 +40535,6 @@ class Mission
 			};
 			id=5508;
 			type="ModuleEffectsFire_F";
-			atlOffset=0.40500069;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41268,14 +41267,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={906.33057,15.131439,4599.4175};
+						position[]={922.02002,15.131439,4578.7998};
 					};
 					side="West";
 					flags=7;
 					class Attributes
 					{
 						rank="MAJOR";
-						description="Commander@Battle Group Command (GM)";
+						name="gm_1";
+						description="Commander (GM - Ne pas prendre ce slot)@Battle Group Command ";
 						isPlayer=1;
 						class Inventory
 						{
@@ -42628,7 +42628,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Medic (GM)@Groupe Médical";
+						name="gm_2";
+						description="Medic (GM - Ne pas prendre ce slot)@Groupe Médical";
 						isPlayable=1;
 						class Inventory
 						{
@@ -46527,6 +46528,125 @@ class Mission
 			{
 			};
 			id=5705;
+		};
+		class Item149
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={921.87805,15.131439,4613.8628};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+					};
+					id=5712;
+					type="B_support_GMG_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5711;
+		};
+		class Item150
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={918.20135,15.13,4594.687};
+			};
+			name="Zeus_2";
+			id=5713;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
