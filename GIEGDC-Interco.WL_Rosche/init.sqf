@@ -101,7 +101,6 @@ GROUPE_OPFOR_GRAND = [
 [0.5,"mkr_spawn_static_unit",true,600.0,false,3600.0,true,true,"LIEUTENANT"] call GDC_fnc_lucyInit;
 ["loadout\loadout.sqf"] call GDC_fnc_lucyConfigLoadoutIA;
 
-//Spawn au choix des joueurs
-//["mk_spawn",_tbObjSpawn,"MAJOR",_tbMrk] call GDC_fnc_chooseSpawnPos;
-//Spawn au choix des joueurs
-//["mk_spawn",[],"MAJOR",["marker_NoSpawn"],nil,10] call GDC_fnc_chooseSpawnPos;
+//Parachutage pour les FS
+[pilote] call GDC_fnc_halo;
+

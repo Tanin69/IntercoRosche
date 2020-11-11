@@ -8,7 +8,7 @@ overViewPictureLocked = "loadScreen.jpg";
 overviewText = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX";
 overviewTextLocked = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX";
 // - Author
-author = "Tisma, Morbakos, tanin69"; 
+author = "Tisma, Morbakos, Stians & tanin69"; 
 // - Type de mission (informatif)
 class Header
 {
