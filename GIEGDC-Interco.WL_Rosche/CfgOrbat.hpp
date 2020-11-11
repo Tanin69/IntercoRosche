@@ -5,7 +5,7 @@ class CfgORBAT
 		id = 1;        // Unit ID
 		idType = 0;    // Unit ID type
 		side = "West"; // Unit side from CfgChainOfCommand >> Sides
-		size = "Size11"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
+		size = "Brigade"; // Unit size from CfgChainOfCommand >> Sizes. Displays relevant icon above the Type icon
 		type = "HQ"; // Unit type from CfgChainOfCommand >> Types
 		commander = "James Norman Mattis"; // Name of unit commander. Can be either direct name, or class from CfgWorlds >> GenericNames (random name from the list is then selected)
 		commanderRank = "GENERAL";
@@ -19,178 +19,222 @@ class CfgORBAT
 		color[] = {255,255,255,1}; // Custom color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
         description= "OTAN"; // A brief description of the group or unit.
 		
-		class 1erBCT
-		{ // 1ere brigade
+		class 1stMBG
+		{ // 1er Multinational Battle Group
 			id = 2;
-			type = "Unknown";
-			size = "BCT";
+			type = "HQ";
+			size = "Regiment";
 			side = "West";
 			commander = "NATOMen";
-			commanderRank = "COLONEL";
-			text = "1er BCT"; // Custom text and short text, can still use some arguments when defined:
+			commanderRank = "MAJOR";
+			text = "1st MBG"; // Custom text and short text, can still use some arguments when defined:
 			// 	%1 - ID (e.g. "7th")
 			// 	%2 - Type (e.g. "Infantry")
 			// 	%3 - Size (e.g. "Division")
-			textShort = "1er BCT";
+			textShort = "1st MBG";
 			// color[] = {0,0,1,1}; // Custom color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
-			description= "Composante ALPHA du Groupe d'Intervention Européen"; // A brief description of the group or unit.
+			description= "VJTF - First Multinational Battle Group"; // A brief description of the group or unit.
  		};
 		
-		class 2emeBCT
-		{ // 2eme brigade
+		class 2ndMBG
+		{ // 1er Multinational Battle Group
 			id = 3;
-			type = "Unknown";
-			size = "BCT";
+			type = "HQ";
+			size = "Regiment";
 			side = "West";
 			commander = "NATOMen";
-			commanderRank = "COLONEL";
-			text = "2eme BCT"; // Custom text and short text, can still use some arguments when defined:
+			commanderRank = "MAJOR";
+			text = "2nd MBG"; // Custom text and short text, can still use some arguments when defined:
 			// 	%1 - ID (e.g. "7th")
 			// 	%2 - Type (e.g. "Infantry")
 			// 	%3 - Size (e.g. "Division")
-			textShort = "2eme BCT";
+			textShort = "2nd MBG";
 			// color[] = {0,0,1,1}; // Bravo color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
-			description= "Composante BRAVO du Groupe d'Intervention Européen"; // A brief description of the group or unit.
+			description= "VJTF - Second Multinational Battle Group"; // A brief description of the group or unit.
 
-			class 1erRPIMa
-			{ // 1erRPIMa
+			class TZNORO
+			{ // Compagnie TZ NORO
 				id = 3;
-				type = "Recon";
-				size = "Regiment";
+				type = "HQ";
+				size = "Company";
 				side = "West";
 				commander = "NATOMen";
-				commanderRank = "Lieutenant";
-				texture = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
-				text = "1er RPIMa";
-				textShort = "1er RPIMa";
+				commanderRank = "CAPTAIN";
+				text = "TZ NORO";
+				textShort = "Cy TZ NORO";
 				color[] = {255,255,255,1};
-				description= "Section du 1er RPIMa";
+				description= "Compagnie affectée à la TZ NORO";
 			};
 
-			class 58thPR
-			{ // 58th pararescue
+			class TZCERO
+			{ // Compagnie TZ CERO
 				id = 3;
-				type = "Helicopter";
-				size = "Squadron";
+				type = "HQ";
+				size = "Company";
 				side = "West";
 				commander = "NATOMen";
-				commanderRank = "Captain";
-				texture = __EVAL(getMissionPath "ORBAT\58thRS.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\58thRS.paa");
-				text = "58th Rescue Squadron";
-				textShort = "58th RS";
+				commanderRank = "CAPTAIN";
+				text = "TZ CERO";
+				textShort = "Cy TZ CERO";
 				color[] = {255,255,255,1};
-				description= "Section du 58th Rescue Squadron";
-				assets[] = {
-					RHS_AH64D_wd,
-					RHS_UH60M_MEV2
-				};
-			};
+				description= "Compagnie affectée à la TZ CERO";
 
-			class 7thCav
-			{ // 7thCav
-				id = 3;
-				type = "Armored";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Captain";
-				texture = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-				text = "7th Cavalry Regiment";
-				textShort = "7th Cavalry";
-				color[] = {255,255,255,1};
-				description= "Peloton du 7th Cavalry Regiment";
-				assets[] = {
-					{rhsusf_m1a2sep1tuskiwd_usarmy, 2}
-				};
-			};
-
-			class 126RI
-			{ // 126RI
-				id = 3;
-				type = "Infantry";
-				size = "Regiment";
-				side = "West";
-				commander = "NATOMen";
-				commanderRank = "Lieutenant";
-				texture = __EVAL(getMissionPath "ORBAT\126RI.paa");
-				insignia = __EVAL(getMissionPath "ORBAT\126RI.paa");
-				text = "126eme Régiment d'infanterie";
-				textShort = "126eme RI";
-				color[] = {255,255,255,1};
-				description= "Section du 126eme Régiment d'infanterie";
-
-				class 24RI
-				{ // 24RI
+				class 1erRPIMa
+				{ // 1erRPIMa
 					id = 3;
-					type = "Infantry";
-					size = "Regiment";
+					type = "Recon";
+					//size = "Regiment";
+					size = "Squad";
 					side = "West";
 					commander = "NATOMen";
-					commanderRank = "Lieutenant";
-					texture = __EVAL(getMissionPath "ORBAT\24RI.paa");
-					insignia = __EVAL(getMissionPath "ORBAT\24RI.paa");
-					text = "24eme Régiment d'infanterie";
-					textShort = "24eme RI";
+					commanderRank = "LIEUTENANT";
+					texture = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\1erRPIMa.paa");
+					text = "1er RPIMa";
+					textShort = "1er RPIMa";
 					color[] = {255,255,255,1};
-					description= "Section du 24eme Régiment d'infanterie";
+					description= "Section du 1er RPIMa";
 				};
 
-				class 92RI
-				{ // 92RI
+				class 58thPR
+				{ // 58th pararescue
 					id = 3;
-					type = "Infantry";
-					size = "Regiment";
-					side = "West";
-					commander = "NATOMen";
-					commanderRank = "Lieutenant";
-					texture = __EVAL(getMissionPath "ORBAT\92RI.paa");
-					insignia = __EVAL(getMissionPath "ORBAT\92RI.paa");
-					text = "92eme Régiment d'infanterie";
-					textShort = "92eme RI";
-					color[] = {255,255,255,1};
-					description= "Section du 92eme Régiment d'infanterie";
-				};
-
-				class 3rdCav
-				{ // 3rdCav
-					id = 3;
-					type = "MechanizedInfantry";
-					size = "Regiment";
+					type = "Helicopter";
+					size = "Squadron";
 					side = "West";
 					commander = "NATOMen";
 					commanderRank = "Captain";
-					texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
-					insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
-					text = "3rd Cavalry Regiment";
-					textShort = "3rd Cavalry";
+					texture = __EVAL(getMissionPath "ORBAT\58thRS.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\58thRS.paa");
+					text = "58th Rescue Squadron";
+					textShort = "58th RS";
 					color[] = {255,255,255,1};
-					description= "Peloton du 3rd Cavalry Regiment";
+					description= "Section du 58th Rescue Squadron";
 					assets[] = {
-						{RHS_M2A3_BUSKI_wd, 3}
+						RHS_AH64D_wd,
+						RHS_UH60M_MEV2
 					};
 				};
+
+				class 7thCav
+				{ // 7thCav
+					id = 3;
+					type = "Armored";
+					size = "Platoon";
+					side = "West";
+					commander = "NATOMen";
+					commanderRank = "Captain";
+					texture = __EVAL(getMissionPath "ORBAT\7thCav.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\7thCav.paa");
+					text = "7th Cavalry Regiment";
+					textShort = "7th Cavalry";
+					color[] = {255,255,255,1};
+					description= "Peloton du 7th Cavalry Regiment";
+					assets[] = {
+						{rhsusf_m1a2sep1tuskiwd_usarmy, 2}
+					};
+				};
+
+				class 126RI
+				{ // 126RI
+					id = 3;
+					type = "Infantry";
+					size = "Regiment";
+					side = "West";
+					commander = "NATOMen";
+					commanderRank = "Lieutenant";
+					texture = __EVAL(getMissionPath "ORBAT\126RI.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\126RI.paa");
+					text = "126eme Régiment d'infanterie";
+					textShort = "126eme RI";
+					color[] = {255,255,255,1};
+					description= "Section du 126eme Régiment d'infanterie";
+
+					class 24RI
+					{ // 24RI
+						id = 3;
+						type = "Infantry";
+						size = "Regiment";
+						side = "West";
+						commander = "NATOMen";
+						commanderRank = "Lieutenant";
+						texture = __EVAL(getMissionPath "ORBAT\24RI.paa");
+						insignia = __EVAL(getMissionPath "ORBAT\24RI.paa");
+						text = "24eme Régiment d'infanterie";
+						textShort = "24eme RI";
+						color[] = {255,255,255,1};
+						description= "Section du 24eme Régiment d'infanterie";
+					};
+
+					class 92RI
+					{ // 92RI
+						id = 3;
+						type = "Infantry";
+						size = "Regiment";
+						side = "West";
+						commander = "NATOMen";
+						commanderRank = "Lieutenant";
+						texture = __EVAL(getMissionPath "ORBAT\92RI.paa");
+						insignia = __EVAL(getMissionPath "ORBAT\92RI.paa");
+						text = "92eme Régiment d'infanterie";
+						textShort = "92eme RI";
+						color[] = {255,255,255,1};
+						description= "Section du 92eme Régiment d'infanterie";
+					};
+
+					class 3rdCav
+					{ // 3rdCav
+						id = 3;
+						type = "MechanizedInfantry";
+						size = "Regiment";
+						side = "West";
+						commander = "NATOMen";
+						commanderRank = "Captain";
+						texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+						insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+						text = "3rd Cavalry Regiment";
+						textShort = "3rd Cavalry";
+						color[] = {255,255,255,1};
+						description= "Peloton du 3rd Cavalry Regiment";
+						assets[] = {
+							{RHS_M2A3_BUSKI_wd, 3}
+						};
+					};
+				};
+				
+			};
+
+			class TZSURO
+			{ // Bataillon TZ SURO
+				id = 3;
+				type = "HQ";
+				size = "Company";
+				side = "West";
+				commander = "NATOMen";
+				commanderRank = "CAPTAIN";
+				text = "TZ SURO";
+				textShort = "Cy TZ SURO";
+				color[] = {255,255,255,1};
+				description= "Compagnie affectée à la TZ SURO";
 			};
 
  		};
 		
-		class 3emeBCT
+		class 3rdMBG
 		{ // 3eme brigade
 			id = 4;
 			type = "Unknown";
-			size = "BCT";
+			size = "Regiment";
 			side = "West";
 			commander = "NATOMen";
 			commanderRank = "COLONEL";
-			text = "3eme BCT"; // Custom text and short text, can still use some arguments when defined:
+			text = "3rd MBG"; // Custom text and short text, can still use some arguments when defined:
 			// 	%1 - ID (e.g. "7th")
 			// 	%2 - Type (e.g. "Infantry")
 			// 	%3 - Size (e.g. "Division")
-			textShort = "3eme BCT";
+			textShort = "3rd MBG";
 			// color[] = {0,0,1,1}; // Bravo color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
-			description= "Composante BRAVO du Groupe d'Intervention Européen"; // A brief description of the group or unit.
+			description= "VJTF - Second Multinational Battle Group"; // A brief description of the group or unit.
  		};
 		
 	};
