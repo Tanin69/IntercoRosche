@@ -11,9 +11,12 @@ private _condition_renforcement = {true};
 
 systemChat "[GPM] Init";
 
-if (DEBUG) then {
-	systemChat "[GPM] Cache des objets sur Rosche";
+if(!isNil "DEBUG") then {
+	if(DEBUG) then {
+		systemChat "[GPM] Cache des objets sur Rosche";
+	};
 };
+
 
 /********************
 *		PHASE 0		*
