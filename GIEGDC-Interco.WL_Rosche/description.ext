@@ -5,10 +5,10 @@ overViewPicture       = "loadScreen.jpg";
 overViewPictureLocked = "loadScreen.jpg";
 */
 // - Texte de description
-overviewText = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX";
-overviewTextLocked = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX";
+overviewText = "Operation Rogue Wave Piercer";
+overviewTextLocked = "Operation Rogue Wave Piercer";
 // - Author
-author = "Tisma, Morbakos, Stians & tanin69"; 
+author = "Tisma, Morbakos, Stians (GIE) & tanin69 (GdC)"; 
 // - Type de mission (informatif)
 class Header
 {
@@ -19,9 +19,9 @@ class Header
 
 // Affichage durant l'écran de chargement
 // - Nom de la mission
-onLoadName = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX"; 
+onLoadName = "Operation Rogue Wave Piercer"; 
 // - Texte de description
-onLoadMission = "Interco XXXXXXXXXXXXXXXXXXXXXXXXX";
+onLoadMission = "Operation Rogue Wave Piercer";
 // - Image
 loadScreen = "";
 

@@ -1,9 +1,11 @@
-if (!isServer) exitWith {};
-
-{ // On désactive les objets de "Build_1" et "Build_2"
-    private _obj = _x;
-    _obj hideObjectGlobal true;
-} foreach (((getMissionLayerEntities "Build_1") select 0) + ((getMissionLayerEntities "Build_2") select 0));
+[
+	{
+		{ // On désactive les objets de "Build_1" et "Build_2"
+			private _obj = _x;
+			_x hideObjectGlobal true; //Ne peut être exécuté que sur le serveur (cf. Biki)
+		} foreach (((getMissionLayerEntities "Build_1") select 0) + ((getMissionLayerEntities "Build_2") select 0));
+	}
+] remoteExec["call",2];
 
 private _renforcement_1 = 60;
 private _renforcement_2 = 30;
@@ -21,23 +23,22 @@ if(!isNil "DEBUG") then {
 /********************
 *		PHASE 0		*
 *********************/
-
 // Spawn des unités
-["spawn_IA\spawnHostile_Suttorf_1.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Suttorf_2.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Suttorf_3.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Jarlitz_1.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Jarlitz_2.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Jarlitz_3.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Jarlitz_4.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Klein_1.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Klein_2.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Klein_3.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Klein_4.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Molbath_1.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Molbath_2.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Schlieckau_1.sqf"] call GDC_fnc_lucyExecVMHC;
-["spawn_IA\spawnHostile_Schlieckau_2.sqf"] call GDC_fnc_lucyExecVMHC;
+[] execVM "spawn_IA\spawnHostile_Suttorf_1.sqf";
+[] execVM "spawn_IA\spawnHostile_Suttorf_2.sqf";
+[] execVM "spawn_IA\spawnHostile_Suttorf_3.sqf";
+[] execVM "spawn_IA\spawnHostile_Jarlitz_1.sqf";
+[] execVM "spawn_IA\spawnHostile_Jarlitz_2.sqf";
+[] execVM "spawn_IA\spawnHostile_Jarlitz_3.sqf";
+[] execVM "spawn_IA\spawnHostile_Jarlitz_4.sqf";
+[] execVM "spawn_IA\spawnHostile_Klein_1.sqf";
+[] execVM "spawn_IA\spawnHostile_Klein_2.sqf";
+[] execVM "spawn_IA\spawnHostile_Klein_3.sqf";
+[] execVM "spawn_IA\spawnHostile_Klein_4.sqf";
+[] execVM "spawn_IA\spawnHostile_Molbath_1.sqf";
+[] execVM "spawn_IA\spawnHostile_Molbath_2.sqf";
+[] execVM "spawn_IA\spawnHostile_Schlieckau_1.sqf";
+[] execVM "spawn_IA\spawnHostile_Schlieckau_2.sqf";
 
 
 /********************
@@ -52,7 +53,8 @@ PHASE_MISSION = 1;
 //////////////////////////////////////////////////////////////
 //		Dans cette phase, les paramils lancent l'assaut		//
 //////////////////////////////////////////////////////////////
-["spawn_IA\spawnHostile_AssautParamil.sqf"] call GDC_fnc_lucyExecVMHC;
+[] execVM "spawn_IA\spawnHostile_AssautParamil.sqf";
+//["spawn_IA\spawnHostile_AssautParamil.sqf"] call GDC_fnc_lucyRemoteExecVMHC;
 
 /********************
 *		PHASE 2		*
@@ -88,7 +90,7 @@ systemChat "[GPM] Spawn garnison 1 sur Rosche";
 	private _obj = _x;
 	_obj hideObjectGlobal false;
 } foreach ((getMissionLayerEntities "Build_1") select 0);
-["spawn_IA\spawnHostile_Rosche_1.sqf"] call GDC_fnc_lucyExecVMHC;
+[] execVM "spawn_IA\spawnHostile_Rosche_1.sqf";
 
 // Renforcement sur Rosche 2
 sleep (60*_renforcement_2);
@@ -98,8 +100,13 @@ while {!_condition_renforcement} do {
 };
 
 systemChat "[GPM] Spawn garnison 2 sur Rosche";
-{ // On active les objets de "Build_1"
-	private _obj = _x;
-	_obj hideObjectGlobal false;
-} foreach ((getMissionLayerEntities "Build_2") select 0);
-["spawn_IA\spawnHostile_Rosche_2.sqf"] call GDC_fnc_lucyExecVMHC;
+[
+	{
+		{ // On active les objets de "Build_1"
+			private _obj = _x;
+			_obj hideObjectGlobal false;
+		} foreach ((getMissionLayerEntities "Build_2") select 0);
+	}
+] remoteExec["call",2];
+
+[] execVM "spawn_IA\spawnHostile_Rosche_2.sqf";

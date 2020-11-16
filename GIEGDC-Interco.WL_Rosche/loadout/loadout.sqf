@@ -23,10 +23,12 @@ loadout_rfl = {
 	_unit addPrimaryWeaponItem "rhs_30Rnd_762x39mm_Savz58";
 
 	comment "Add containers";
-	_unit forceAddUniform "rhs_uniform_flora_patchless";
+		_unit forceAddUniform "rhs_uniform_flora_patchless";
 	_unit addVest "rhs_6b5_khaki";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_Savz58";};
 	for "_i" from 1 to 5 do {_unit addItemToVest "rhs_30Rnd_762x39mm_Savz58";};
 	_unit addHeadgear "rhs_6b27m_green";
@@ -67,6 +69,8 @@ loadout_officer = {
 	_unit addVest "rhs_vest_commander";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_18rnd_9x21mm_7N28";};
 	for "_i" from 1 to 5 do {_unit addItemToVest "rhs_18rnd_9x21mm_7N28";};
 	_unit addHeadgear "rhssaf_beret_black";
@@ -115,6 +119,8 @@ loadout_SL = {
 	_unit addWeapon "rhs_pdu4";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_18rnd_9x21mm_7N28";};
 	_unit addItemToUniform "rhs_30Rnd_545x39_7N6M_AK";
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_18rnd_9x21mm_7N28";};
@@ -155,6 +161,8 @@ loadout_TL = {
 	_unit addPrimaryWeaponItem "rhs_30Rnd_762x39mm";
 
 	comment "Add containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	_unit forceAddUniform "rhs_uniform_flora_patchless";
 	_unit addVest "rhs_6b5_khaki";
 
@@ -200,6 +208,8 @@ loadout_medic = {
 	_unit addVest "rhs_6b5_medic_khaki";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N6M_AK";};
 	for "_i" from 1 to 8 do {_unit addItemToVest "rhs_30Rnd_545x39_7N6M_AK";};
 	_unit addHeadgear "rhs_6b27m_green";
@@ -286,6 +296,8 @@ loadout_MG = {
 	_unit addBackpack "rhs_sidor";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToVest "rhs_100Rnd_762x54mmR";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
 	_unit addHeadgear "rhs_6b27m_green";
@@ -329,6 +341,8 @@ loadout_assMG = {
 	_unit addHeadgear "rhs_6b27m_green";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_Savz58";};
 	for "_i" from 1 to 5 do {_unit addItemToVest "rhs_30Rnd_762x39mm_Savz58";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR_7BZ3";};
@@ -376,6 +390,8 @@ loadout_lat = {
 	_unit addHeadgear "rhs_6b27m_green";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	for "_i" from 1 to 8 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
@@ -462,6 +478,8 @@ loadout_paramil_rfl_1 = {
 	_unit addVest "rhsgref_TacVest_ERDL";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N6M_AK";};
 	for "_i" from 1 to 11 do {_unit addItemToVest "rhs_30Rnd_545x39_7N6M_AK";};
 	_unit addHeadgear "rhssaf_booniehat_md2camo";
@@ -503,6 +521,8 @@ loadout_paramil_rfl_2 = {
 	_unit forceAddUniform "rhsgref_uniform_woodland_olive";
 	_unit addVest "rhsgref_chestrig";
 
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	comment "Add items to containers";
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	_unit addItemToVest "rhs_30Rnd_762x39mm_bakelite";
@@ -546,6 +566,8 @@ loadout_paramil_rfl_3 = {
 	_unit addVest "rhsgref_chicom";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	for "_i" from 1 to 10 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
 	_unit addGoggles "G_Balaclava_blk";
@@ -588,6 +610,8 @@ loadout_paramil_MG = {
 	_unit addBackpack "rhs_sidor";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	_unit addItemToVest "rhs_100Rnd_762x54mmR";
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR";};
 
@@ -630,6 +654,8 @@ loadout_paramil_assMG = {
 	_unit addBackpack "rhs_sidor";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	for "_i" from 1 to 10 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_100Rnd_762x54mmR_7BZ3";};
@@ -677,6 +703,8 @@ loadout_paramil_AT = {
 	_unit addBackpack "rhs_rpg_empty";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm_bakelite";};
 	for "_i" from 1 to 8 do {_unit addItemToVest "30Rnd_762x39_Mag_F";};
 	for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_rpg7_PG7VL_mag";};
@@ -724,6 +752,8 @@ loadout_paramil_AA = {
 	_unit addBackpack "rhs_sidor";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_30Rnd_762x39mm";};
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_30Rnd_762x39mm";};
 
@@ -765,6 +795,8 @@ loadout_paramil_SL = {
 	_unit addVest "rhsgref_TacVest_ERDL";
 
 	comment "Add items to containers";
+	_unit addItemToUniform "rhs_mag_rgo";
+	for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 	for "_i" from 1 to 3 do {_unit addItemToUniform "rhs_30Rnd_545x39_7N6M_AK";};
 	for "_i" from 1 to 10 do {_unit addItemToVest "rhs_30Rnd_545x39_7N6M_AK";};
 	_unit addHeadgear "rhsgref_hat_M1951";

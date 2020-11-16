@@ -98,9 +98,14 @@ GROUPE_OPFOR_GRAND = [
 ];
 
 //LUCY
-[0.5,"mkr_spawn_static_unit",true,600.0,false,3600.0,true,true,"LIEUTENANT"] call GDC_fnc_lucyInit;
+[0.5,"marker_suttorf",true,600.0,false,3600.0,true,true,"LIEUTENANT"] call GDC_fnc_lucyInit;
 ["loadout\loadout.sqf"] call GDC_fnc_lucyConfigLoadoutIA;
 
 //Parachutage pour les FS
 [pilote] call GDC_fnc_halo;
+
+//Lancement du GPM
+if (!isServer && !hasInterface) then {
+	[] spawn int_fnc_gamePhaseManager;
+};
 
