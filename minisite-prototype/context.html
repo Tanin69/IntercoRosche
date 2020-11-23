@@ -4,118 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Interco GIE/GDC 15/04/2021 | Contexte</title>
+    <title>Contexte | Interco GIE/GDC 15/04/2021</title>
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=Marvel&display=swap" rel="stylesheet">
+    <!-- icon site -->
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
     <!-- style framework bulma import -->
-    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="./style/bulma.min.css">
     <!-- personnal style import -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body class="has-navbar-fixed-top">
 
     <!-- navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <!-- menu burger mobile -->
-        <div class="navbar-brand">      
-            <a role="button" 
-               class="navbar-burger burger" 
-               aria-label="menu" 
-               aria-expanded="false" 
-               data-target="navbarBasicExample"
-               id="navbar-burger"
-               onclick="menu_open()"   
-            >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-      
-        <div id="navbar-menu" class="navbar-menu">
-            <!-- navbar left part -->
-            <div class="navbar-start">
-                <a href="./index.html" class="navbar-item">
-                    Accueil
-                </a>
-                
-                <div class="navbar-item has-dropdown is-hoverable" id="navbar-dropdown">
-                    <a class="navbar-link" onclick="dropdown_open()">
-                        Briefing
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a href="./context.html" class="navbar-item">
-                            Contexte
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 1
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 2
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 3
-                        </a>
-                    </div>
-                </div>
-
-                <a class="navbar-item">
-                    Modset
-                </a>
-
-                <a class="navbar-item">
-                    Contact
-                </a>
-            </div>
-
-            <!-- navbar right part -->
-            <div class="navbar-end">
-                <span class="separator"></span>
-                <a class="navbar-item">
-                    Inscription
-                </a>
-            </div>
-        </div>
-    </nav>
+    <div w3-include-html="./includes/navbar.html"></div>
 
     <!-- image header -->
     <header>
-        <div id="img-header" class="breif"></div>
+        <div id="img-header" class="contexte"></div>
     </header>
 
     <!-- information panel -->
-    <div class="information-panel">
-        <div class="info-top">
-            <h4 class="title">Informations</h4>
-            
-            <div class="info-item">
-                Joueurs inscrits : <span class="info-val">9</span>
-            </div>
+    <div w3-include-html="./includes/info-panel.html"></div>
 
-            <div class="info-item">
-                Places disponibles : <span class="info-val">31</span>
-            </div>
-
-            <div class="info-item">
-                Places réservées : <span class="info-val">10</span>
-            </div>
-        </div>
-
-        <div class="info-bottom">
-            <h4 class="title">Différentes dates</h4>
-
-            <div class="info-item">
-                Inscriptions ouvertes jusqu'au : <span class="info-val">15/12/2020</span>
-            </div>
-
-            <div class="info-item">
-                Mission prévue le : <span class="info-val">15/04/2021</span>
-            </div>
-        </div>        
-
-    </div>
+    <!-- side menu -->
+    <aside class="menu" id="aside">
+        <ul class="menu-list">
+            <li><a href="#contexte-historique-geopolitique" class="is-active">Contexte historique et géopolitique</a></li>
+            <li>
+                <a href="#contexte-otan">Contexte OTAN</a>
+                <ul>
+                    <li><a href="#very-high">La Very high readiness Joint Task Force (VJTF), fer de lance de la NRF (NATO Response Force)</a></li>
+                    <li><a href="#2nd-multinatio">Le 2nd Multinational Battle Group “Raging Bull”</a></li>
+                    <li><a href="#OZ_rosche">L'OZ Rosche</a></li>
+                    <li><a href="#unite_TZ_CERO">L’unité TZ CERO (Cy)</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
 
     <!-- content -->
     <section>
@@ -126,60 +53,116 @@
 
         <!-- content -->
         <div class="content">
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum ex vel finibus lacinia. Mauris suscipit, 
-                ante vel bibendum condimentum, lectus odio sodales diam, nec pharetra felis est vel neque. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sit amet fermentum ligula. Mauris 
-                pretium ex dignissim orci volutpat feugiat. Nam in turpis tortor. Phasellus mattis nibh semper arcu lacinia sagittis. 
-                Aenean tellus velit, pellentesque nec nibh non, rutrum bibendum ante. Etiam sit amet malesuada purus. Morbi tincidunt 
-                nulla neque, non posuere sapien placerat non. Mauris hendrerit rutrum pulvinar. Nullam non tortor sed lectus luctus 
-                consectetur id et orci. Nulla fringilla euismod ullamcorper. 
-            </div>
-            <br>
-            <div>
-                Une image pour illustrer : 
-                <div>
-                    <a href="./img/image-header1.jpg" target="_blank"><img src="./img/image-header1.jpg" alt=""></a>
+            <div class="columns">
+                <div class="column">
+                    <h4 class="subtitle is-4" id="contexte-historique-geopolitique">Contexte historique et géopolitique</h4>
+                    <p>
+                        Depuis 15 ans, la Fédération de Russie contrôle politiquement, économiquement et de fait militairement tous les pays de la Bulgarie au sud 
+                        à l’Estonie au nord, en passant par l’Ukraine, le “géant du milieu” et la Biélorussie “l’autre géant du milieu”.
+                    </p>
+                    <p>
+                        Depuis plusieurs mois, la tension est montée d’un cran entre le bloc de l’ex-URSS et les forces de l’OTAN. Mais aucun des deux blocs n’est 
+                        disposé - pour des raisons très différentes - à entrer dans une guerre totale.
+                    </p>
+                    <p>
+                        La Pologne et la plupart des “pays tampons” (République Tchèque, Slovaquie, Hongrie, etc.) ont déclaré leur neutralité pour éviter de se retrouver 
+                        écrasés entre le marteau et l’enclume. Ils laisseront passer toute armée du moment qu’aucune ne s’installe sur leur territoire.
+                    </p>
+                    <a href="./img/carte_strat_globale.png" target="_blank"><img src="./img/carte_strat_globale.png" alt=""></a>
+                    <p>
+                        Malgré cela, depuis plusieurs semaines, des groupes paramilitaires s’infiltrent en Pologne et se massent progressivement à l’ouest du pays, à proximité 
+                        de la frontière allemande. La Pologne n’a pas les moyens militaires de lutter efficacement contre ces groupes lourdement armés, mais officiellement 
+                        affiliés à aucun pays.
+                    </p>
                 </div>
             </div>
-            <br>
-            <div>
-                Orci varius natoque penatibus et magnis dis parturient 
-                montes, nascetur ridiculus mus. Maecenas eget sodales metus. Nam rutrum hendrerit aliquam. Donec pretium semper ornare. 
-                Proin eu ante neque. Donec dictum purus nisi. Integer vestibulum id arcu at tincidunt. Nulla rutrum ante quis metus cursus, 
-                vitae efficitur eros dignissim. Mauris accumsan sapien sapien, eget dapibus dui congue id. Curabitur nulla ipsum, mollis 
-                vitae leo id, rutrum placerat dui. Donec et auctor tellus, id commodo augue. In consequat elit non ultricies pharetra. 
-                Fusce porta libero nec leo lobortis, id porta ante mattis. Vivamus accumsan nisl quis lacus varius, quis luctus nibh elementum. 
-                In hac habitasse platea dictumst. 
+
+            <div class="columns">
+                <div class="column">
+                    <h4 id="contexte-otan" class="subtitle is-4">Contexte OTAN</h4>
+                    <h5 class="subtitle is-5" id="very-high">La Very high readiness Joint Task Force (VJTF), fer de lance de la NRF (NATO Response Force)</h5>
+                    <p>
+                        La VJTF, composante de première intervention de la NRF, mobilise son dispositif. Il lui faut 3 jours à la Force pour être pleinement opérationnelle. 
+                        La VTJF est composée de 3 Multinational Battle Groups - MBG (équivalents à des sous-groupements tactiques interarmes de l’armée française).
+                    </p>
+                    <a href="./img/ORBAT.png" target="_blank"><img src="./img/ORBAT.png" alt=""></a>
+                    <p>
+                        L'Eurocorps constitue le gros des 1st et 3rd MBG. Toutes les troupes allemandes y sont affectées. Il n’y a pas de troupes allemandes dans le 2nd MBG.
+                    </p>
+                </div>
             </div>
-            <br>
-            <div>
-                Sed rutrum metus quis dui vehicula iaculis. Pellentesque in augue vel dolor faucibus tristique 
-                ut porttitor est. Donec sit amet metus metus. Quisque viverra commodo arcu. Suspendisse convallis rutrum mauris, nec sodales 
-                lacus vulputate vel. Nam sed metus ac libero tempor efficitur a vitae est. Pellentesque malesuada blandit placerat. Phasellus 
-                quis tincidunt ligula, ac mattis orci.
+
+            <div class="columns">
+                <div class="column">
+                    <h5 class="subtitle is-5" id="2nd-multinatio">Le 2nd Multinational Battle Group “Raging Bull”</h5>
+                    <p>
+                        <a href="./img/insigne-ragingbull.png" target="_blank"><img src="./img/insigne-ragingbull.png" class="left-align" alt="" style="height: 90px;"></a>
+                        Le 2nd MBG “Raging Bull” est constitué autour d’un noyau issu d’un régiment blindé. Il a été historiquement monté avec des unités US, notamment le 7th 
+                        cavalry regiment, d’où son nom en hommage au boxeur américain Jake LaMotta.
+                    </p> 
+                    <p>
+                        <a href="./img/carte_strat_zoom.png" target="_blank"><img src="./img/carte_strat_zoom.png" class="right-align" alt="" style="height: 200px;"></a>
+                        Cependant, comme le veut l’organisation de la NRF, les différentes composantes des Battle Groups tournent chaque année. Actuellement, le noyau du 2nd MBG 
+                        est constitué par le 92ème régiment d’infanterie (France). Le commandant du battle group et la plupart des chefs d’unités sont donc français.
+                    </p>
+                    <p>
+                        Les raging bulls se voient affecter la zone d’opération Rosche (Operation Zone Rosche - OZ Rosche), du nom d’une ville proche de la frontière germano-polonaise.
+                    </p>
+                    <p>
+                        Des informations complémentaires sont disponibles dans le rapport de situation tactique.
+                    </p>
+                    <h5 class="subtitle is-5" id="OZ_rosche">L'OZ Rosche</h5>
+                    <p>
+                        L’OZ Rosche est découpée en 3 Tactical Zones (TZ) :
+                        <ul>
+                            <li>La TZ Nord : TZ NORO</li>
+                            <li>La TZ Centre (votre TZ) : TZ CERO</li>
+                            <li>La TZ Sud : TZ SURO</li>
+                        </ul>
+                        Sur chaque TZ sera déployé l’équivalent d’une compagnie (Company - Cy) à échéance de 3 jours.
+                    </p>
+                    <a href="./img/schema-team-dispertion.png" target="_blank"><img src="./img/schema-team-dispertion.png" alt="" style="height: 420px;"></a>
+                    <p>
+                        Des informations complémentaires sont disponibles dans le rapport de situation tactique.
+                    </p>
+                </div>
+            </div>
+
+            <div class="columns">                
+                <div class="column">
+                    <h5 class="subtitle is-5" id="unite_TZ_CERO">L’unité TZ CERO (Cy)</h5>
+                    <p>
+                        Votre unité atteindra son effectif nominal dans 3 jours. Pour le moment, vous faites avec ce qui 
+                        est disponible avec les éléments d’avant-garde, soit entre 30 et 60 hommes pour votre unité de combat 
+                        (et peu ou prou la même chose pour les unités Cy NORO et Cy SURO).
+                    </p>
+                    <p>
+                        Du fait de cette projection en extrême urgence, le commandement d’opération a profité des opportunités : 
+                        une section du 92ème régiment d’infanterie (France) était en entraînement avec le 7th cavalry regiment 
+                        (US) à proximité de Berlin. Espérons que les fantassins français du 92ème RI sauront être efficaces avec 
+                        les Bradley du 7th cavalry.
+                    </p>
+                    <p>
+                        Le commandement de la compagnie est assuré par un capitaine du 7th cavalry assisté par un officier adjoint 
+                        du 92ème RI. Ils ont toute latitude pour le déroulement de son action, avec sous ses ordres tous les éléments 
+                        de l’unité disponibles à l’instant T. 
+                    </p>
+                    <p>
+                        Il est sous l’autorité du commandant du 2nd MBG, le Commandant tanin. Ce dernier est occasionnellement sur zone, 
+                        mais n’intervient pas dans l’opération.
+                    </p>
+                    <a href="./img/ORBAT_detail.png" target="_blank"><img src="./img/ORBAT_detail.png" alt=""></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Opération Rogue Wave Piercer</strong> proposé par <a href="https://github.com/Morbakos">Morbakos</a>, <a href="https://github.com/Tanin69">tanin</a>, <a>Tisma</a> & <a href="https://chrisblnc.fr">Stians</a>.
-            </p>
-            <p>
-                <a href="https://arma3.com/">Arma 3</a> ainsi que l'<a>installation des mods</a> est requis pour jouer le soir 
-                de l'interco. L'utilisation de TS et du module ACRE2 est nécessaire pour venir jouer.
-            </p>
-            <p>
-                Copyright © GDC, GIE 2020.
-            </p>
-        </div>
-    </footer>
+    <div w3-include-html="./includes/footer.html"></div>
 </body>
 <!-- jquery import -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- personnal script import -->
-<script src="script.js"></script>
+<script src="./script/includeHTML.js"></script>
+<script src="./script/script.js"></script>
 </html>

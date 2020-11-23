@@ -8,114 +8,25 @@
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=Marvel&display=swap" rel="stylesheet">
+    <!-- icon site -->
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
     <!-- style framework bulma import -->
-    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="./style/bulma.min.css">
     <!-- personnal style import -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body class="has-navbar-fixed-top">
 
     <!-- navbar -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <!-- menu burger mobile -->
-        <div class="navbar-brand">      
-            <a role="button" 
-               class="navbar-burger burger" 
-               aria-label="menu" 
-               aria-expanded="false" 
-               data-target="navbarBasicExample"
-               id="navbar-burger"
-               onclick="menu_open()"   
-            >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-      
-        <div id="navbar-menu" class="navbar-menu">
-            <!-- navbar left part -->
-            <div class="navbar-start">
-                <a href="./index.html" class="navbar-item">
-                    Accueil
-                </a>
-                
-                <div class="navbar-item has-dropdown is-hoverable" id="navbar-dropdown">
-                    <a class="navbar-link" onclick="dropdown_open()">
-                        Briefing
-                    </a>
-
-                    <div class="navbar-dropdown">
-                        <a href="./context.html" class="navbar-item">
-                            Contexte
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 1
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 2
-                        </a>
-                        <a class="navbar-item">
-                            Brief part 3
-                        </a>
-                    </div>
-                </div>
-
-                <a class="navbar-item">
-                    Modset
-                </a>
-
-                <a class="navbar-item">
-                    Contact
-                </a>
-            </div>
-
-            <!-- navbar right part -->
-            <div class="navbar-end">
-                <span class="separator"></span>
-                <a class="navbar-item">
-                    Inscription
-                </a>
-            </div>
-        </div>
-    </nav>
+    <div w3-include-html="./includes/navbar.html"></div>
 
     <!-- image header -->
     <header>
-        <div id="img-header"></div>
+        <div id="img-header" class="home"></div>
     </header>
 
     <!-- information panel -->
-    <div class="information-panel">
-        <div class="info-top">
-            <h4 class="title">Informations</h4>
-            
-            <div class="info-item">
-                Joueurs inscrits : <span class="info-val">9</span>
-            </div>
-
-            <div class="info-item">
-                Places disponibles : <span class="info-val">31</span>
-            </div>
-
-            <div class="info-item">
-                Places réservées : <span class="info-val">10</span>
-            </div>
-        </div>
-
-        <div class="info-bottom">
-            <h4 class="title">Différentes dates</h4>
-
-            <div class="info-item">
-                Inscriptions ouvertes jusqu'au : <span class="info-val">15/12/2020</span>
-            </div>
-
-            <div class="info-item">
-                Mission prévue le : <span class="info-val">15/04/2021</span>
-            </div>
-        </div>        
-
-    </div>
+    <div w3-include-html="./includes/info-panel.html"></div>
 
     <!-- logo panel -->
     <div class="logo-panel">
@@ -132,53 +43,48 @@
 
         <!-- content -->
         <div class="content">
-            <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum ex vel finibus lacinia. Mauris suscipit, 
-                ante vel bibendum condimentum, lectus odio sodales diam, nec pharetra felis est vel neque. Class aptent taciti 
-                sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sit amet fermentum ligula. Mauris 
-                pretium ex dignissim orci volutpat feugiat. Nam in turpis tortor. Phasellus mattis nibh semper arcu lacinia sagittis. 
-                Aenean tellus velit, pellentesque nec nibh non, rutrum bibendum ante. Etiam sit amet malesuada purus. Morbi tincidunt 
-                nulla neque, non posuere sapien placerat non. Mauris hendrerit rutrum pulvinar. Nullam non tortor sed lectus luctus 
-                consectetur id et orci. Nulla fringilla euismod ullamcorper. 
+            <div class="columns">
+                <div class="column">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum ex vel finibus lacinia. Mauris suscipit, 
+                        ante vel bibendum condimentum, lectus odio sodales diam, nec pharetra felis est vel neque. Class aptent taciti 
+                        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sit amet fermentum ligula. Mauris 
+                        pretium ex dignissim orci volutpat feugiat. Nam in turpis tortor. Phasellus mattis nibh semper arcu lacinia sagittis. 
+                        Aenean tellus velit, pellentesque nec nibh non, rutrum bibendum ante. Etiam sit amet malesuada purus. Morbi tincidunt 
+                        nulla neque, non posuere sapien placerat non. Mauris hendrerit rutrum pulvinar. Nullam non tortor sed lectus luctus 
+                        consectetur id et orci. Nulla fringilla euismod ullamcorper. 
+                    </p>
+                    <p>
+                        Orci varius natoque penatibus et magnis dis parturient 
+                        montes, nascetur ridiculus mus. Maecenas eget sodales metus. Nam rutrum hendrerit aliquam. Donec pretium semper ornare. 
+                        Proin eu ante neque. Donec dictum purus nisi. Integer vestibulum id arcu at tincidunt. Nulla rutrum ante quis metus cursus, 
+                        vitae efficitur eros dignissim. Mauris accumsan sapien sapien, eget dapibus dui congue id. Curabitur nulla ipsum, mollis 
+                        vitae leo id, rutrum placerat dui. Donec et auctor tellus, id commodo augue. In consequat elit non ultricies pharetra. 
+                        Fusce porta libero nec leo lobortis, id porta ante mattis. Vivamus accumsan nisl quis lacus varius, quis luctus nibh elementum. 
+                        In hac habitasse platea dictumst. 
+                    </p>
+                </div>
             </div>
-            <br>
-            <div>
-                Orci varius natoque penatibus et magnis dis parturient 
-                montes, nascetur ridiculus mus. Maecenas eget sodales metus. Nam rutrum hendrerit aliquam. Donec pretium semper ornare. 
-                Proin eu ante neque. Donec dictum purus nisi. Integer vestibulum id arcu at tincidunt. Nulla rutrum ante quis metus cursus, 
-                vitae efficitur eros dignissim. Mauris accumsan sapien sapien, eget dapibus dui congue id. Curabitur nulla ipsum, mollis 
-                vitae leo id, rutrum placerat dui. Donec et auctor tellus, id commodo augue. In consequat elit non ultricies pharetra. 
-                Fusce porta libero nec leo lobortis, id porta ante mattis. Vivamus accumsan nisl quis lacus varius, quis luctus nibh elementum. 
-                In hac habitasse platea dictumst. 
-            </div>
-            <br>
-            <div>
-                Sed rutrum metus quis dui vehicula iaculis. Pellentesque in augue vel dolor faucibus tristique 
-                ut porttitor est. Donec sit amet metus metus. Quisque viverra commodo arcu. Suspendisse convallis rutrum mauris, nec sodales 
-                lacus vulputate vel. Nam sed metus ac libero tempor efficitur a vitae est. Pellentesque malesuada blandit placerat. Phasellus 
-                quis tincidunt ligula, ac mattis orci.
+                
+            <div class="columns">
+                <div class="column">
+                    <p>
+                        Sed rutrum metus quis dui vehicula iaculis. Pellentesque in augue vel dolor faucibus tristique 
+                        ut porttitor est. Donec sit amet metus metus. Quisque viverra commodo arcu. Suspendisse convallis rutrum mauris, nec sodales 
+                        lacus vulputate vel. Nam sed metus ac libero tempor efficitur a vitae est. Pellentesque malesuada blandit placerat. Phasellus 
+                        quis tincidunt ligula, ac mattis orci.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- footer -->
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Opération Rogue Wave Piercer</strong> proposé par <a href="https://github.com/Morbakos">Morbakos</a>, <a href="https://github.com/Tanin69">tanin</a>, <a>Tisma</a> & <a href="https://chrisblnc.fr">Stians</a>.
-            </p>
-            <p>
-                <a href="https://arma3.com/">Arma 3</a> ainsi que l'<a>installation des mods</a> est requis pour jouer le soir 
-                de l'interco. L'utilisation de TS et du module ACRE2 est nécessaire pour venir jouer.
-            </p>
-            <p>
-                Copyright © GDC, GIE 2020.
-            </p>
-        </div>
-    </footer>
+    <div w3-include-html="./includes/footer.html"></div>
 </body>
 <!-- jquery import -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- personnal script import -->
-<script src="script.js"></script>
+<script src="./script/includeHTML.js"></script>
+<script src="./script/script.js"></script>
 </html>

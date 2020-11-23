@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Intel | Interco GIE/GDC 15/04/2021</title>
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Marvel&display=swap" rel="stylesheet">
+    <!-- icon site -->
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <!-- style framework bulma import -->
+    <link rel="stylesheet" href="./style/bulma.min.css">
+    <!-- personnal style import -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="has-navbar-fixed-top">
+
+    <!-- navbar -->
+    <div w3-include-html="./includes/navbar.html"></div>
+
+    <!-- image header -->
+    <header>
+        <div id="img-header" class="intel"></div>
+    </header>
+
+    <!-- information panel -->
+    <div w3-include-html="./includes/info-panel.html"></div>
+
+    <!-- side menu -->
+    <aside class="menu" id="aside">
+        <ul class="menu-list">
+            <!-- dispo à j-7 -->
+            <li class="intel-hide intel-J7"><a href="" class="is-active"></a></li>
+            <!-- dispo à j-1 -->
+            <li class="intel-hide intel-H24"><a href="">Situation générale, ORBAT, réseau radio</a></li>
+            <li class="intel-hide intel-H24"><a href=""></a></li>
+            <!-- dispo à h-4 -->
+            <li class="intel-hide intel-H4"><a href=""></a></li>
+            <!-- dispo à h-2 -->
+            <li class="intel-hide intel-H2"><a href="">Position générale des hostiles</a></li>
+            <!-- dispo 30min avant -->
+            <li class="intel-hide intel-M30">
+                <a href="">Renseignements détaillés sur Rosche (sauf si renseignements à collecter par FS)</a>
+                <ul>
+                    <li><a href="">Localisation du QG sur Rosche</a></li>
+                    <li><a href="">Présence SAM dans la zone du QG</a></li>
+                </ul>
+            </li>
+            <!-- dispo à t0 -->
+            <li class="intel-hide intel-t0">
+                <a href="">Renseignements détaillés sur certaines positions des hostiles (groupes paramil)</a>
+                <ul>
+                    <li><a href="">Positions des iglaa et présence AA sur Rosche</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- content -->
+    <section>
+        <!-- title -->
+        <div class="content-title">
+            <h1 class="title">Intel</h1>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <div class="columns intel-hide intel-Jx">
+                <div class="column">
+                    <h4 class="subtitle is-4 intel-hide intel-Jx">Vous aurez plus d'information bientôt.</h4>
+                    <img src="./img/dog_wait.jpg" alt="" class="intel-hide intel-Jx">
+                </div>
+            </div>
+
+            <!-- dispo à j-7 -->
+            <div class="columns intel-hide intel-J7">
+                <div class="column">
+                    <h4 class="subtitle is-4"></h4>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- dispo à j-1 -->
+            <div class="columns intel-hide intel-H24">
+                <div class="column">
+                    <h4 class="subtitle is-4">Situation générale, ORBAT, réseau radio</h4>
+                    <p>
+
+                    </p>
+
+                    <h4 class="subtitle is-4"></h4>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- dispo à h-4 -->
+            <div class="columns intel-hide intel-H4">
+                <div class="column">
+                    <h4 class="subtitle is-4"></h4>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- dispo à h-2 -->
+            <div class="columns intel-hide intel-H2">
+                <div class="column">
+                    <h4 class="subtitle is-4">Position générale des hostiles</h4>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- dispo 30min avant -->
+            <div class="columns intel-hide intel-M30">
+                <div class="column">
+                    <h4 class="subtitle is-4">Renseignements détaillés sur Rosche (sauf si renseignements à collecter par FS)</h4>
+                    <h5 class="subtitle is-5">Localisation du QG sur Rosche</h5>
+                    <p>
+
+                    </p>
+
+                    <h5 class="subtitle is-5">Présence SAM dans la zone du QG</h5>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- dispo à t0 -->
+            <div class="columns intel-hide intel-t0">
+                <div class="column">
+                    <h4 class="subtitle is-4">Renseignements détaillés sur certaines positions des hostiles (groupes paramil)</h4>
+                    <h5 class="subtitle is-5">Positions des iglaa et présence AA sur Rosche</h5>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div w3-include-html="./includes/footer.html"></div>
+</body>
+<!-- jquery import -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- personnal script import -->
+<script src="./script/includeHTML.js"></script>
+<script src="./script/script.js"></script>
+</html>
