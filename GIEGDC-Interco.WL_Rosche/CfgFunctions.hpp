@@ -23,6 +23,7 @@ class CfgFunctions
 			file="functions\misc";
 			class findClearZoneInArea {};
 			class gamePhaseManager {};
+			class refuelTank {};
 		}
 
 		class fuite
