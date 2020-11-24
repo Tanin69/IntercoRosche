@@ -1,3 +1,4 @@
+/*
 magazines[] = {"rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM","rhsusf_mag_DIRCM"};
 magazines[] = {"rhs_mag_30x113mm_M789_HEDP_1200","rhs_laserfcsmag","rhs_LaserMag_ai"};
 
@@ -33,3 +34,8 @@ ammo = "ACE_Hellfire_AGM114K";
 
 //Canon
 "rhs_mag_30x113mm_M789_HEDP_1200"
+*/
+
+for "_i" from 1 to 2 do {[ammo_hemtt, "rhs_mag_M151_19"] call ace_rearm_fnc_addMagazineToSupply;};
+[ammo_hemtt, "rhs_mag_30x113mm_M789_HEDP_1200"] call ace_rearm_fnc_addMagazineToSupply;
+for "_i" from 1 to 10 do {[ammo_hemtt, "rhsusf_M130_CMFlare_Chaff_Magazine_x2"] call ace_rearm_fnc_addMagazineToSupply;};
