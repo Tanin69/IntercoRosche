@@ -1,15 +1,15 @@
+// Initialise les véhicules BLUFOR
 
-
-/*
-	execVM "spawn_IA\spawnHostile_Klein_1.sqf";
-	execVM "spawn_IA\spawnHostile_Klein_2.sqf";
-	execVM "spawn_IA\spawnHostile_Klein_3.sqf";
-	execVM "spawn_IA\spawnHostile_Klein_4.sqf";
-	execVM "spawn_IA\spawnHostile_Molbath_1.sqf";
-	execVM "spawn_IA\spawnHostile_Molbath_2.sqf";
-	execVM "spawn_IA\spawnHostile_Schlieckau_1.sqf";
-	execVM "spawn_IA\spawnHostile_Schlieckau_2.sqf";
-*/
+//Cargo des véhicules
+[ifv_1,"cargo_ifv"] call int_fnc_cargoVehicle;
+[ifv_2,"cargo_ifv"] call int_fnc_cargoVehicle;
+[ifv_3,"cargo_ifv"] call int_fnc_cargoVehicle;
+[ifv_4,"cargo_ifv"] call int_fnc_cargoVehicle;
+[mbt_1,"cargo_mbt"] call int_fnc_cargoVehicle;
+[mbt_2,"cargo_mbt"] call int_fnc_cargoVehicle;
+[mbt_3,"cargo_mbt"] call int_fnc_cargoVehicle;
+[UH60,"cargo_UH60"] call int_fnc_cargoVehicle;
+[AH64,"cargo_AH64"] call int_fnc_cargoVehicle;
 
 
 

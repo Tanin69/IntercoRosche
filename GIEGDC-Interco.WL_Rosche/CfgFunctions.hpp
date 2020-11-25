@@ -24,6 +24,7 @@ class CfgFunctions
 			class findClearZoneInArea {};
 			class gamePhaseManager {};
 			class refuelTank {};
+			class cargoVehicle {};
 		}
 
 		class fuite

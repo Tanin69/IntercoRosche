@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6005;
+		nextID=6028;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2650;
+		nextID=2700;
 	};
 	class Camera
 	{
-		pos[]={852.30798,24.601604,4610.3193};
-		dir[]={0.68079245,-0.37564912,-0.62901938};
-		up[]={0.27594501,0.92669415,-0.25496173};
-		aside[]={-0.67870742,-2.7897477e-006,-0.73457104};
+		pos[]={904.6662,35.918209,4598.8286};
+		dir[]={0.17752437,-0.51301485,0.83997482};
+		up[]={0.1060858,0.85831338,0.50194854};
+		aside[]={0.97850245,-2.9132061e-006,-0.20680143};
 	};
 };
 binarizationWanted=0;
@@ -191,7 +191,8 @@ addons[]=
 	"ace_optics",
 	"A3_Characters_F_Mark",
 	"A3_Soft_F_Gamma_Truck_01",
-	"ace_repair"
+	"ace_repair",
+	"A3_Soft_F_Enoch_Truck_01"
 };
 class AddonsMetaData
 {
@@ -2433,7 +2434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=229;
+		items=246;
 		class Item0
 		{
 			dataType="Logic";
@@ -14772,6 +14773,7 @@ class Mission
 											};
 											id=5354;
 											type="B_Slingload_01_Medevac_F";
+											atlOffset=9.5367432e-007;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -14813,6 +14815,7 @@ class Mission
 											};
 											id=5426;
 											type="B_Slingload_01_Medevac_F";
+											atlOffset=9.5367432e-007;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -14908,10 +14911,10 @@ class Mission
 											};
 											id=5369;
 											type="Camp_EP1";
+											atlOffset=-9.5367432e-007;
 										};
 									};
 									id=4676;
-									atlOffset=9.5367432e-007;
 								};
 							};
 							id=2530;
@@ -22379,6 +22382,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
+						name="AH64D";
 					};
 					id=3424;
 					type="rhsusf_army_ucp_ah64_pilot";
@@ -22395,6 +22399,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						name="AH64G";
 					};
 					id=3425;
 					type="rhsusf_army_ucp_ah64_pilot";
@@ -22436,6 +22441,7 @@ class Mission
 				};
 			};
 			id=3422;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item21
 		{
@@ -22450,6 +22456,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
+				name="AH64";
 				textures="standard";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
@@ -22458,6 +22465,7 @@ class Mission
 			};
 			id=3423;
 			type="RHS_AH64D_wd";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34230,11 +34238,12 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{for ""_i"" from 1 to 2 do {[ammo_hemtt, ""rhs_mag_M151_19""] call ace_rearm_fnc_addMagazineToSupply;}; " \n "[ammo_hemtt, ""rhs_mag_30x113mm_M789_HEDP_1200""] call ace_rearm_fnc_addMagazineToSupply; " \n "for ""_i"" from 1 to 10 do {[ammo_hemtt, ""rhsusf_M130_CMFlare_Chaff_Magazine_x2""] call ace_rearm_fnc_addMagazineToSupply;};}";
-				name="ammo_hemtt";
+				name="hemtt_ammo";
 				dynamicSimulation=1;
 			};
 			id=2087;
 			type="B_T_Truck_01_ammo_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34273,11 +34282,12 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{_action = [ " \n " ""refuelVehicleTank"", " \n " ""Remplir la citerne du véhicule"", " \n " """", " \n " {[this, RefuelStation, trgRefuelStation] call int_fnc_refuelTank;}, " \n " {this inArea trgRefuelStation} " \n "] call ace_interact_menu_fnc_createAction; " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
-				name="RefuelVehicle_1";
+				name="hemtt_refuel_1";
 				dynamicSimulation=1;
 			};
 			id=2079;
 			type="B_T_Truck_01_fuel_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34316,11 +34326,12 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{ _action = [ " \n " ""refuelVehicleTank"", " \n " ""Remplir la citerne du véhicule"", " \n " """", " \n " {[this, RefuelStation, trgRefuelStation] call int_fnc_refuelTank;}, " \n " {this inArea trgRefuelStation} " \n "] call ace_interact_menu_fnc_createAction; " \n " " \n "[this, 0, [""ACE_MainActions""], _action] call ace_interact_menu_fnc_addActionToObject;}";
-				name="RefuelVehicle_2";
+				name="hemtt_refuel_2";
 				dynamicSimulation=1;
 			};
 			id=2125;
 			type="B_T_Truck_01_fuel_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34366,6 +34377,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
@@ -34613,25 +34643,6 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
-						};
-					};
-				};
 				class Attribute2
 				{
 					property="rhs_decalMask";
@@ -34861,6 +34872,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.015); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="mbt_3";
 				textures="woodland";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -35019,6 +35031,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.01); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="ifv_3";
 				textures="standard";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -35210,12 +35223,14 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.01); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="ifv_1";
 				textures="standard";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
 			};
 			id=2280;
 			type="RHS_M2A3_BUSKI_wd";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35400,7 +35415,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.01); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
-				name="bradley_test";
+				name="ifv_4";
 				textures="standard";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -38330,6 +38345,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.015); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="mbt_1";
 				textures="woodland";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -38504,6 +38520,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.015); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="mbt_2";
 				textures="woodland";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -38742,6 +38759,7 @@ class Mission
 			{
 				lock="UNLOCKED";
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.01); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
+				name="ifv_2";
 				textures="standard";
 				dynamicSimulation=1;
 				reportOwnPosition=1;
@@ -51938,6 +51956,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
+				name="hemtt_repair";
 			};
 			id=5971;
 			type="B_Truck_01_Repair_F";
@@ -52548,7 +52567,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						name="RefuelVehicle_1D";
+						name="hemtt_refuel_1D";
 						class Inventory
 						{
 							class uniform
@@ -52602,6 +52621,7 @@ class Mission
 				};
 			};
 			id=5985;
+			atlOffset=9.5367432e-007;
 		};
 		class Item225
 		{
@@ -52622,6 +52642,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="hemtt_repairD";
 						class Inventory
 						{
 							class uniform
@@ -52830,6 +52851,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
+				name="UH60";
 				reportOwnPosition=1;
 			};
 			id=6002;
@@ -52876,6 +52898,265 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={649.38538,16.135731,4656.415};
+				angles[]={-0,4.4795203,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6007;
+			type="Truck_01_Rack_F";
+			atlOffset=9.5367432e-007;
+		};
+		class Item230
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={644.15186,15.398,4660.0986};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6008;
+			type="RoadCone";
+		};
+		class Item231
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={647.6734,15.350342,4658.4854};
+				angles[]={6.2826972,0,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6009;
+			type="ClutterCutter_EP1";
+			atlOffset=0.22034168;
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={646.37622,15.398,4660.439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6010;
+			type="RoadCone";
+		};
+		class Item233
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={648.77203,15.398,4661.019};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6011;
+			type="RoadCone";
+		};
+		class Item234
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={650.9964,15.398,4661.3594};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6012;
+			type="RoadCone";
+		};
+		class Item235
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={652.99097,15.398,4661.4976};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6013;
+			type="RoadCone";
+		};
+		class Item236
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={655.21533,15.398,4661.8379};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6014;
+			type="RoadCone";
+		};
+		class Item237
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={644.65503,15.398,4650.0767};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6015;
+			type="RoadCone";
+		};
+		class Item238
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={646.87939,15.398,4650.417};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6016;
+			type="RoadCone";
+		};
+		class Item239
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={649.04852,15.398,4650.5908};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6017;
+			type="RoadCone";
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={651.27289,15.398,4650.9312};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6018;
+			type="RoadCone";
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={653.29547,15.398,4651.3286};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6019;
+			type="RoadCone";
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={655.51984,15.398,4651.6689};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6020;
+			type="RoadCone";
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={657.35394,15.398,4651.8096};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6021;
+			type="RoadCone";
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={659.57831,15.398,4652.1499};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6022;
+			type="RoadCone";
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={654.53198,15.13,4657.0903};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6023;
+			type="ClutterCutter_EP1";
 		};
 	};
 	class Connections
