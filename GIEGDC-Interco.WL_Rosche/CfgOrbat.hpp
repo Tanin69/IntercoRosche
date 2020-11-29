@@ -52,7 +52,7 @@ class CfgORBAT
 			// color[] = {0,0,1,1}; // Bravo color, will replace color set by 'side' param. Can be either RGBA array, or class from CfgMarkerColors
 			description= "VJTF - Second Multinational Battle Group"; // A brief description of the group or unit.
 
-			class TZNORO
+			class CyNORO
 			{ // Compagnie TZ NORO
 				id = 3;
 				type = "HQ";
@@ -60,13 +60,13 @@ class CfgORBAT
 				side = "West";
 				commander = "NATOMen";
 				commanderRank = "CAPTAIN";
-				text = "TZ NORO";
+				text = "Compagnie NORO";
 				textShort = "Cy TZ NORO";
 				color[] = {255,255,255,1};
 				description= "Compagnie affectée à la TZ NORO";
 			};
 
-			class TZCERO
+			class CyCERO
 			{ // Compagnie TZ CERO
 				id = 3;
 				type = "HQ";
@@ -74,8 +74,8 @@ class CfgORBAT
 				side = "West";
 				commander = "NATOMen";
 				commanderRank = "CAPTAIN";
-				text = "TZ CERO";
-				textShort = "Cy TZ CERO";
+				text = "Compagnie CERO";
+				textShort = "Cy CERO";
 				color[] = {255,255,255,1};
 				description= "Compagnie affectée à la TZ CERO";
 
@@ -84,7 +84,7 @@ class CfgORBAT
 					id = 3;
 					type = "Recon";
 					//size = "Regiment";
-					size = "Squad";
+					//size = "Squad";
 					side = "West";
 					commander = "NATOMen";
 					commanderRank = "LIEUTENANT";
@@ -96,81 +96,50 @@ class CfgORBAT
 					description= "Section du 1er RPIMa";
 				};
 
-				class 58thPR
-				{ // 58th pararescue
+				class 82ndCAB
+				{ // 82nd Combat Air Bataillon
 					id = 3;
 					type = "Helicopter";
-					size = "Squadron";
+					//size = "Squadron";
 					side = "West";
 					commander = "NATOMen";
 					commanderRank = "Captain";
 					texture = __EVAL(getMissionPath "ORBAT\58thRS.paa");
 					insignia = __EVAL(getMissionPath "ORBAT\58thRS.paa");
-					text = "58th Rescue Squadron";
-					textShort = "58th RS";
+					text = "82nd Combat Air Bataillon";
+					textShort = "82nd CAB";
 					color[] = {255,255,255,1};
-					description= "Section du 58th Rescue Squadron";
+					description= "Section du 82nd Combat Air Bataillon";
 					assets[] = {
 						RHS_AH64D_wd,
 						RHS_UH60M_MEV2
 					};
 				};
 
-				class 7thCav
-				{ // 7thCav
+				class 3rdCav
+				{ // 3rdCav - MBT
 					id = 3;
 					type = "Armored";
-					size = "Platoon";
+					//size = "Platoon";
 					side = "West";
 					commander = "NATOMen";
-					commanderRank = "Captain";
-					texture = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-					insignia = __EVAL(getMissionPath "ORBAT\7thCav.paa");
-					text = "7th Cavalry Regiment";
-					textShort = "7th Cavalry";
+					commanderRank = "Sergeant";
+					texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+					insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
+					text = "3rd Cavalry Regiment";
+					textShort = "3rd Cavalry";
 					color[] = {255,255,255,1};
-					description= "Peloton du 7th Cavalry Regiment";
+					description= "Peloton de MBT du 3rd Cavalry Regiment";
 					assets[] = {
-						{rhsusf_m1a2sep1tuskiwd_usarmy, 2}
+						{rhsusf_m1a2sep1tuskiwd_usarmy, 3}
 					};
 				};
 
-				class 126RI
-				{ // 126RI
-					id = 3;
-					type = "Infantry";
-					size = "Regiment";
-					side = "West";
-					commander = "NATOMen";
-					commanderRank = "Lieutenant";
-					texture = __EVAL(getMissionPath "ORBAT\126RI.paa");
-					insignia = __EVAL(getMissionPath "ORBAT\126RI.paa");
-					text = "126eme Régiment d'infanterie";
-					textShort = "126eme RI";
-					color[] = {255,255,255,1};
-					description= "Section du 126eme Régiment d'infanterie";
-
-					class 24RI
-					{ // 24RI
-						id = 3;
-						type = "Infantry";
-						size = "Regiment";
-						side = "West";
-						commander = "NATOMen";
-						commanderRank = "Lieutenant";
-						texture = __EVAL(getMissionPath "ORBAT\24RI.paa");
-						insignia = __EVAL(getMissionPath "ORBAT\24RI.paa");
-						text = "24eme Régiment d'infanterie";
-						textShort = "24eme RI";
-						color[] = {255,255,255,1};
-						description= "Section du 24eme Régiment d'infanterie";
-					};
-
-					class 92RI
+				class 92RI
 					{ // 92RI
 						id = 3;
 						type = "Infantry";
-						size = "Regiment";
+						//size = "Section";
 						side = "West";
 						commander = "NATOMen";
 						commanderRank = "Lieutenant";
@@ -179,32 +148,48 @@ class CfgORBAT
 						text = "92eme Régiment d'infanterie";
 						textShort = "92eme RI";
 						color[] = {255,255,255,1};
-						description= "Section du 92eme Régiment d'infanterie";
-					};
+						description= "Section du 92ème Régiment d'infanterie";
 
 					class 3rdCav
-					{ // 3rdCav
+					{ // 3rdCav - IFV
 						id = 3;
 						type = "MechanizedInfantry";
-						size = "Regiment";
+						//size = "Platoon";
 						side = "West";
 						commander = "NATOMen";
-						commanderRank = "Captain";
+						//commanderRank = "Captain";
 						texture = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
 						insignia = __EVAL(getMissionPath "ORBAT\3rdCav.paa");
 						text = "3rd Cavalry Regiment";
 						textShort = "3rd Cavalry";
 						color[] = {255,255,255,1};
-						description= "Peloton du 3rd Cavalry Regiment";
+						description= "Peloton d'IFV du 3rd Cavalry Regiment";
 						assets[] = {
-							{RHS_M2A3_BUSKI_wd, 3}
+							{RHS_M2A3_BUSKI_wd, 4}
 						};
 					};
+
+					class 92RI
+					{ // 92RI
+						id = 3;
+						type = "Infantry";
+						//size = "Squad";
+						side = "West";
+						//commander = "NATOMen";
+						//commanderRank = "Lieutenant";
+						texture = __EVAL(getMissionPath "ORBAT\92RI.paa");
+						insignia = __EVAL(getMissionPath "ORBAT\92RI.paa");
+						text = "92eme Régiment d'infanterie";
+						textShort = "92eme RI";
+						color[] = {255,255,255,1};
+						description= "4 équipes du 92ème Régiment d'infanterie";
+					};
+					
 				};
 				
 			};
 
-			class TZSURO
+			class CySURO
 			{ // Bataillon TZ SURO
 				id = 3;
 				type = "HQ";
@@ -212,8 +197,8 @@ class CfgORBAT
 				side = "West";
 				commander = "NATOMen";
 				commanderRank = "CAPTAIN";
-				text = "TZ SURO";
-				textShort = "Cy TZ SURO";
+				text = "Compagnie SURO";
+				textShort = "Cy SURO";
 				color[] = {255,255,255,1};
 				description= "Compagnie affectée à la TZ SURO";
 			};
