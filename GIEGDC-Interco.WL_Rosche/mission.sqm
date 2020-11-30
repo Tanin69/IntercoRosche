@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2850;
+		nextID=2900;
 	};
 	class Camera
 	{
-		pos[]={815.05548,18.923351,4699.6045};
-		dir[]={-0.94836825,-0.22350192,0.22560157};
-		up[]={-0.21752459,0.97463155,0.051744752};
-		aside[]={0.23144791,-6.0396269e-007,0.97296339};
+		pos[]={844.96149,74.469803,4619.5391};
+		dir[]={-0.67271829,-0.40465766,0.619636};
+		up[]={-0.29767889,0.91439384,0.27418885};
+		aside[]={0.67756337,-1.1775701e-006,0.73561424};
 	};
 };
 binarizationWanted=0;
@@ -1056,7 +1056,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=33;
+									items=35;
 									class Item0
 									{
 										class data
@@ -1519,6 +1519,34 @@ class CustomAttributes
 											value="ace_medical_treatment_locationsboosttraining";
 										};
 									};
+									class Item33
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_feedback_paineffecttype";
+										};
+									};
+									class Item34
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_medical_treatment_advancedbandages";
+										};
+									};
 								};
 							};
 						};
@@ -1535,7 +1563,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=33;
+									items=35;
 									class Item0
 									{
 										class data
@@ -3002,6 +3030,96 @@ class CustomAttributes
 															};
 														};
 														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item33
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item34
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=2;
 													};
 												};
 												class Item1
@@ -35094,6 +35212,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -35337,25 +35474,6 @@ class Mission
 									};
 								};
 							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
 						};
 					};
 				};
@@ -53844,6 +53962,7 @@ class Mission
 			{
 				init="call{[this]spawn {" \n "params[""_unit""];while {(alive _unit) and (fuel _unit > 0)} do {  " \n " " \n "if (isengineon _unit) then { " \n "_unit setFuel ( Fuel _unit - 0.01); " \n "}; " \n "sleep 60; " \n "};" \n "}}";
 				name="medevac";
+				textures="rhs_woodland";
 			};
 			id=6029;
 			type="rhsusf_M1230a1_usarmy_wd";
