@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2950;
+		nextID=3000;
 	};
 	class Camera
 	{
-		pos[]={698.14838,23.202597,4657.4214};
-		dir[]={-0.67271829,-0.40465766,0.619636};
-		up[]={-0.29767889,0.91439384,0.27418885};
-		aside[]={0.67756337,-1.1775701e-006,0.73561424};
+		pos[]={717.66949,31.355488,4652.2681};
+		dir[]={0.64931548,-0.51131052,-0.56320238};
+		up[]={0.38627869,0.85932493,-0.33504874};
+		aside[]={-0.65530628,-1.7303973e-006,-0.7555089};
 	};
 };
 binarizationWanted=0;
@@ -20886,7 +20886,7 @@ class Mission
 							type="mil_dot";
 							colorName="ColorEAST";
 							id=2826;
-							atlOffset=0.00026893616;
+							atlOffset=0.080446243;
 						};
 						class Item16
 						{
@@ -35212,6 +35212,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -35455,25 +35474,6 @@ class Mission
 									};
 								};
 							};
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
 						};
 					};
 				};

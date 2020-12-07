@@ -63,51 +63,45 @@
 		Nothing
 */
 
-params [
-	"_unit",
-	"_loadout"
-];
-
-
-
-if !(_loadout in ["int_loadout_commandement_chef_operation", "int_loadout_commandement_second_operation", "int_loadout_commandement_op_radio", "int_loadout_58th_pilote", "int_loadout_58th_artilleur", "int_loadout_58th_chef_equipe", "int_loadout_58th_medic", "int_loadout_7th_commandant", "int_loadout_7th_tireur", "int_loadout_7th_pilote", "int_loadout_3rd_commandant", "int_loadout_3rd_tireur", "int_loadout_3rd_pilote", "int_loadout_1erRPIMa_chef_groupe", "int_loadout_1erRPIMa_jtac", "int_loadout_1erRPIMa_grenadier", "int_loadout_1erRPIMa_mitrailleur", "int_loadout_1erRPIMa_operateur", "int_loadout_1erRPIMa_medic", "int_loadout_1erRPIMa_tireur_precision", "int_loadout_126RI_chef_section", "int_loadout_126RI_mitrailleur_lourd", "int_loadout_126RI_assistant_mitrailleur", "int_loadout_24RI_chef_groupe", "int_loadout_24RI_chef_equipe", "int_loadout_24RI_fusilier", "int_loadout_24RI_mitrailleur", "int_loadout_24RI_ac", "int_loadout_24RI_tireur_precision", "int_loadout_92RI_chef_groupe", "int_loadout_92RI_chef_equipe", "int_loadout_92RI_fusilier", "int_loadout_92RI_mitrailleur", "int_loadout_92RI_tireur_precision"]) exitWith {
-    ["Le loadout %1 n'existe pas",_loadout] call BIS_fnc_error;
+if (!params ["_unit", "loadout"]) exitWith {
+	["L'unité ou le loadout n'est pas défini"] call BIS_fnc_error;
 };
 
 switch _loadout do {
-	case "int_loadout_commandement_chef_operation": { [_unit] call INT_fnc_commandement_chef_operation };
-	case "int_loadout_commandement_second_operation": { [_unit] call INT_fnc_commandement_second_operation };
-	case "int_loadout_commandement_op_radio": { [_unit] call INT_fnc_commandement_op_radio };
-	case "int_loadout_58th_pilote": { [_unit] call INT_fnc_58th_pilote };
-	case "int_loadout_58th_artilleur": { [_unit] call INT_fnc_58th_artilleur };
-	case "int_loadout_58th_chef_equipe": { [_unit] call INT_fnc_58th_chef_equipe };
-	case "int_loadout_58th_medic": { [_unit] call INT_fnc_58th_medic };
-	case "int_loadout_7th_commandant": { [_unit] call INT_fnc_7th_commandant };
-	case "int_loadout_7th_tireur": { [_unit] call INT_fnc_7th_tireur };
-	case "int_loadout_7th_pilote": { [_unit] call INT_fnc_7th_pilote };
-	case "int_loadout_3rd_commandant": { [_unit] call INT_fnc_3rd_commandant };
-	case "int_loadout_3rd_tireur": { [_unit] call INT_fnc_3rd_tireur };
-	case "int_loadout_3rd_pilote": { [_unit] call INT_fnc_3rd_pilote };
-	case "int_loadout_1erRPIMa_chef_groupe": { [_unit] call INT_fnc_1erRPIMa_chef_groupe };
-	case "int_loadout_1erRPIMa_jtac": { [_unit] call INT_fnc_1erRPIMa_jtac };
-	case "int_loadout_1erRPIMa_grenadier": { [_unit] call INT_fnc_1erRPIMa_grenadier };
-	case "int_loadout_1erRPIMa_mitrailleur": { [_unit] call INT_fnc_1erRPIMa_mitrailleur };
-	case "int_loadout_1erRPIMa_operateur": { [_unit] call INT_fnc_1erRPIMa_operateur };
-	case "int_loadout_1erRPIMa_medic": { [_unit] call INT_fnc_1erRPIMa_medic };
-	case "int_loadout_1erRPIMa_tireur_precision": { [_unit] call INT_fnc_1erRPIMa_tireur_precision };
-	case "int_loadout_126RI_chef_section": { [_unit] call INT_fnc_126RI_chef_section };
-	case "int_loadout_126RI_mitrailleur_lourd": { [_unit] call INT_fnc_126RI_mitrailleur_lourd };
-	case "int_loadout_126RI_assistant_mitrailleur": { [_unit] call INT_fnc_126RI_assistant_mitrailleur };
-	case "int_loadout_24RI_chef_groupe": { [_unit] call INT_fnc_24RI_chef_groupe };
-	case "int_loadout_24RI_chef_equipe": { [_unit] call INT_fnc_24RI_chef_equipe };
-	case "int_loadout_24RI_fusilier": { [_unit] call INT_fnc_24RI_fusilier };
-	case "int_loadout_24RI_mitrailleur": { [_unit] call INT_fnc_24RI_mitrailleur };
-	case "int_loadout_24RI_ac": { [_unit] call INT_fnc_24RI_ac };
-	case "int_loadout_24RI_tireur_precision": { [_unit] call INT_fnc_24RI_tireur_precision };
-	case "int_loadout_92RI_chef_groupe": { [_unit] call INT_fnc_92RI_chef_groupe };
-	case "int_loadout_92RI_chef_equipe": { [_unit] call INT_fnc_92RI_chef_equipe };
-	case "int_loadout_92RI_fusilier": { [_unit] call INT_fnc_92RI_fusilier };
-	case "int_loadout_92RI_mitrailleur": { [_unit] call INT_fnc_92RI_mitrailleur };
-	case "int_loadout_92RI_tireur_precision": { [_unit] call INT_fnc_92RI_tireur_precision };
+	case "mbg_command": { [_unit] call INT_fnc_loadout_qg };
+
+	case "com_cdo": { [_unit] call INT_fnc_loadout_commandement_chef_operation };
+	case "com_oa": { [_unit] call INT_fnc_loadout_commandement_second_operation };
+
+	case "82nd_pilote_uh60": { [_unit] call INT_fnc_loadout_82nd_pilote };
+	case "82nd_copilote_uh60": { [_unit] call INT_fnc_loadout_82nd_artilleur };
+	case "82nd_pilote_ah64": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "82nd_copilote_ah64": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "82nd_medecin_chef": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "82nd_medecin": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "82nd_auxsan": { [_unit] call INT_fnc_loadout_82nd_medic };
+
+	case "fs_sl": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "fs_jtac": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "fs_tp": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "fs_auxsan": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "fs_operateur": { [_unit] call INT_fnc_loadout_82nd_medic };
+
+	case "7th_chef_abrams": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "7th_tireur_abrams": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "7th_conducteur_abrams": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "7th_chef_bradley": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "7th_tireur_bradley": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "7th_conducteur_bradley": { [_unit] call INT_fnc_loadout_82nd_medic };
+
+	case "92ri_sl": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "92ri_opr": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "92ri_chef_groupe": { [_unit] call INT_fnc_loadout_82nd_chef_equipe };
+	case "92ri_mg": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "92ri_mg_leger": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "92ri_assist_mg": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "92ri_auxsan": { [_unit] call INT_fnc_loadout_82nd_medic };
+	case "92ri_fusilier": { [_unit] call INT_fnc_loadout_82nd_medic };
+
 	default { };
 };

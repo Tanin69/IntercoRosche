@@ -43,47 +43,47 @@ class CfgFunctions
 		class loadout_joueurs
 		{
 			file="loadout\loadout_joueurs";
-			class commandement_chef_operation {};
-			class commandement_second_operation {};
-			class commandement_op_radio {};
 
-			class 58th_pilote {};
-			class 58th_artilleur {};
-			class 58th_chef_equipe {};
-			class 58th_medic {};
+			// Loadout GM
+			class loadout_qg {};
 
-			class 7th_commandant {};
-			class 7th_tireur {};
-			class 7th_pilote {};
+			// Loadout groupe commandement
+			class loadout_commandement_chef_operation {};
+			class loadout_commandement_second_operation {};
 
-			class 3rd_commandant {};
-			class 3rd_tireur {};
-			class 3rd_pilote {};
+			// Loadout 82nd
+			class loadout_82nd_pilote_uh60 {};
+			class loadout_82nd_copilote_uh60 {};
+			class loadout_82nd_pilote_ah64 {};
+			class loadout_82nd_copilote_ah64 {};
+			class loadout_82nd_medecin_chef {};
+			class loadout_82nd_medecin {};
+			class loadout_82nd_auxsan {};
 
-			class 1erRPIMa_chef_groupe {};
-			class 1erRPIMa_jtac {};
-			class 1erRPIMa_grenadier {};
-			class 1erRPIMa_mitrailleur {};
-			class 1erRPIMa_operateur {};
-			class 1erRPIMa_medic {};
-			class 1erRPIMa_tireur_precision {};
+			// Loadout FS
+			class loadout_fs_sl {};
+			class loadout_fs_jtac {};
+			class loadout_fs_tp {};
+			class loadout_fs_auxsan {};
+			class loadout_fs_operateur {};
 
-			class 126RI_chef_section {};
-			class 126RI_mitrailleur_lourd {};
-			class 126RI_assistant_mitrailleur {};
+			// Loadout 7th
+			class loadout_7th_chef_abrams {};
+			class loadout_7th_tireur_abrams {};
+			class loadout_7th_conducteur_abrams {};
+			class loadout_7th_chef_bradley {};
+			class loadout_7th_tireur_bradley {};
+			class loadout_7th_conducteur_bradley {};
 
-			class 24RI_chef_groupe {};
-			class 24RI_chef_equipe {};
-			class 24RI_fusilier {};
-			class 24RI_mitrailleur {};
-			class 24RI_ac {};
-			class 24RI_tireur_precision {};
-			
-			class 92RI_chef_groupe {};
-			class 92RI_chef_equipe {};
-			class 92RI_fusilier {};
-			class 92RI_mitrailleur {};
-			class 92RI_tireur_precision {};
+			// Loadout 92 RI
+			class loadout_92ri_sl {};
+			class loadout_92ri_opr {};
+			class loadout_92ri_chef_groupe {};
+			class loadout_92ri_mg {};
+			class loadout_92ri_mg_leger {};
+			class loadout_92ri_assist_mg {};
+			class loadout_92ri_auxsan {};
+			class loadout_92ri_fusilier {};
 		};
 	};
 };
