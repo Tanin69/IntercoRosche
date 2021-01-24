@@ -25,7 +25,7 @@ if (_action) then {
 	}];
 };
 
-// On créé toutes les actionsprivate 
+// On créé toutes les actions 
 private _action_loadout_qg = [
 	"_action_loadout_qg",
 	"Loadout Battle Group Command",
