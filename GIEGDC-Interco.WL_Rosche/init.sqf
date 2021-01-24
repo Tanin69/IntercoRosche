@@ -109,3 +109,6 @@ if (!isServer && !hasInterface) then {
 	[] spawn int_fnc_gamePhaseManager;
 };
 
+{
+	[_x] call int_fnc_initCaisseLoadout;	
+} forEach [caisse_loadout_abrams, caisse_loadout_bradley, caisse_loadout_fs, caisse_loadout_helico_cdo, caisse_loadout_infant, caisse_loadout_medic];
