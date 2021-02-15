@@ -1,59 +1,83 @@
 /*
-	Author: [GIE] Gavin "Morbakos" Sertix
-	
-	Description:
-		Initialise le module de fuite des groupes paramilitaires.
+    Author: [GIE] Gavin "Morbakos" Sertix
+    
+    Description:
+        Initialise le module de fuite des groupes paramilitaires.
+        Les paramètres peuvent être définis pour chaque groupe, avec la commande suivante: 
+            (group this) setVariable ["coef_fuite_kia", [6, 8, 10]];
+        
+        Les différentes variables possibles sont:
+            - coef_fuite_kia
+            - coef_fuite_kia_allies
+            - coef_fuite_tanks
+            - coef_fuite_ifv
+            - coef_fuite_helo
+            - coef_fuite_allies_en_fuite
 
-		Pour qu'un groupe soit géré par la fonction : (group this) setVariable ["INT_groupIsParamil", true];
-
-		Les paramètres peuvent être définis pour chaque groupe, avec la commande suivante: 
-			(group this) setVariable ["coef_fuite_kia", [6, 8, 10]];
-		
-		Les différentes variables possibles sont:
-			- coef_fuite_kia
-			- coef_fuite_kia_allies
-			- coef_fuite_tanks
-			- coef_fuite_ifv
-			- coef_fuite_helo
-			- coef_fuite_allies_en_fuite
-
-		Chaque variable doit être un tableau contenant 3 entiers du type [min, mid, max]. Le poids de chaque événement est choisi aléatoirement dans cet interval.
-	
-	Parameter(s):
-		None
-	
-	Returns:
-		Nothing
+        Chaque variable doit être un tableau contenant 3 entiers du type [min, mid, max]. Le poids de chaque événement est choisi aléatoirement dans cet interval.
+    
+    Parameter(s):
+        0 - SIDE              : Side of fleeing troops
+        1 - STRING            : Fallback marker
+        2 - STRING or CODE    : Looping conditions (while the script is active)
+        3 - ARRAY (Optionnal) : Fleeing rate for KIA in group. Default: [6, 8, 10]
+        4 - ARRAY (Optionnal) : Fleeing rate for friendly KIA. Default: [1,1.5,2]
+        5 - ARRAY (Optionnal) : Fleeing rate for every knowned heavy vehicles (tanks). Default: [10, 12, 15]
+        6 - ARRAY (Optionnal) : Fleeing rate for every knowned IFV. Default: [8, 11, 13]
+        7 - ARRAY (Optionnal) : Fleeing rate for every knowned helo. Default: [10, 12, 15]
+        8 - ARRAY (Optionnal) : Fleeing rate for every fleeing ally. Default: [5, 5, 7]
+    
+    Returns:
+        Nothing
 */
 
 
+params [
+	["_side", sideEmpty, [sideEmpty]],
+	["_fleeingMarker", "", [""]],
+	["_loop_condition", true, [true,{}]],
+	["_coef_fuite_kia", [6, 8, 10], [[]]],
+	["_coef_fuite_kia_allies", [1,1.5,2], [[]]],
+	["_coef_fuite_tanks", [10, 12, 15], [[]]],
+	["_coef_fuite_ifv", [8, 11, 13], [[]]],
+	["_coef_fuite_helo", [10, 12, 15], [[]]],
+	["_coef_fuite_allies_en_fuite", [5, 5, 7], [[]]]
+];
+
+if (_side isEqualTo sideEmpty) exitWith {
+	hint "side must be specified";
+};
+
+if (_fleeingMarker isEqualTo "") exitWith {
+	hint "fleeing marker must be set";
+};
+
 LOG_PREFIX_FUITE = "[FLEEING_MODULE]";
-int_delai_avant_scan = 5;
+int_before_before_check = 5;
 int_delay_between_check = 15;
 int_corpses_distance = 30;
 int_fleeing_distance = 50;
-int_paramil_classname = ["O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_unarmed_F", "O_G_Soldier_AR_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F", "O_G_Soldier_LAT2_F", "O_G_Soldier_SL_F", "O_G_officer_F"];
 
 // Coefficiens de fuite
-int_coef_fuite_kia = [6, 8, 10];
-int_coef_fuite_kia_allies = [1,1.5,2];
-int_coef_fuite_tanks = [10, 12, 15];
-int_coef_fuite_ifv = [8, 11, 13];
-int_coef_fuite_helo = [10, 12, 15];
-int_coef_fuite_allies_en_fuite = [5, 5, 7];
+int_coef_fuite_kia = _coef_fuite_kia;
+int_coef_fuite_kia_allies = _coef_fuite_kia_allies;
+int_coef_fuite_tanks = _coef_fuite_tanks;
+int_coef_fuite_ifv = _coef_fuite_ifv;
+int_coef_fuite_helo = _coef_fuite_helo;
+int_coef_fuite_allies_en_fuite = _coef_fuite_allies_en_fuite;
 
-if (isNil "int_phase_defense") then {
-	int_phase_defense = true;
-};
+// Param généraux
+coward_side = _side;
+loop_condition = _loop_condition;
 
 [] spawn {
-	sleep int_delai_avant_scan;
+	sleep int_before_before_check;
 	systemChat format ["%1 Init fleeing module", LOG_PREFIX_FUITE];
 
-	while {int_phase_defense} do {
+	while {loop_condition} do {
 		
 		// Obtention de la liste des groupes de paramilitaires
-		paramil_groups_list = (allGroups select { (side _x == east) && (_x getVariable ["INT_groupIsParamil", false]) && ((count (units _x)) > 0) });
+		paramil_groups_list = (allGroups select { (side _x == coward_side) && (_x getVariable ["INT_groupIsParamil", false]) && ((count (units _x)) > 0) });
 		systemChat format ["%1 group count: %2", LOG_PREFIX_FUITE, count paramil_groups_list];
 
 		{
@@ -66,6 +90,9 @@ if (isNil "int_phase_defense") then {
 			*/
 			private _cur_group = _x;
 			private _fleeingRate = 0;
+
+			// On ajoute les eventHandler
+			[_cur_group] call INT_fnc_addEventHandler;
 
 			// Récupération de potentielles valeurs perso
 			private _kia             = _cur_group getVariable ["coef_fuite_kia", int_coef_fuite_kia];
@@ -84,7 +111,8 @@ if (isNil "int_phase_defense") then {
 			};
 
 			// On récupère la liste des corps à proximités (à moins de X mètres et connu un minimum)
-			private _dead_friendly_units = (allDeadMen select { (((leader _cur_group) distance2d _x) <= int_corpses_distance ) && ((typeOf _x) in int_paramil_classname) });
+			// private _dead_friendly_units = (allDeadMen select { (((leader _cur_group) distance2d _x) <= int_corpses_distance ) && ((typeOf _x) in int_paramil_classname) });
+			private _dead_friendly_units = (allDeadMen select { (((leader _cur_group) distance2d _x) <= int_corpses_distance ) && (_x getVariable ["cowardDied", false]) });
 
 			// On vérifie si le groupe est au courant pour les véhicules lourds de l'OTAN
 			private _knowned_heavy_vehicles = [];

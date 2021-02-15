@@ -32,6 +32,7 @@ class CfgFunctions
 			file="functions\fleeing";
 			class fleeing {};
 			class doFleeing {};
+			class addEventHandler {};
 		};
 
 		class loadout
