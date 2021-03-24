@@ -27,7 +27,7 @@ private _tbMrk = allMapMarkers select {["mrk", _x, true] call BIS_fnc_inString};
 gdc_plutoDebug = false;
 
 //On adapte le nombre d'hostiles par rapport au nombre de joueurs
-//nbJoueurs = playersNumber west; -> à initialiser via la console au début de la partie
+nbJoueurs = playersNumber west; //-> à initialiser via la console au début de la partie
 
 /* Paramil class names :
 O_G_Soldier_F = rifleman
@@ -41,12 +41,12 @@ O_G_Soldier_SL_F = team leader
 O_G_officer_F = instructeur armée régulière
 */
 
-// Groupes PARAMIL. De 2 à 4 pax.
+// Groupes PARAMIL. De 3 à 4 pax.
 GROUPE_PARAMIL_PETIT = [
 	["O_G_Soldier_lite_F","O_G_Soldier_LAT_F"],
-	["O_G_Soldier_lite_F", "O_G_Soldier_unarmed_F"],
-	["O_G_Soldier_AR_F", "O_G_Soldier_A_F"],
-	["O_G_Soldier_LAT_F", "O_G_Soldier_F","O_G_Soldier_lite_F"],
+	["O_G_Soldier_lite_F", "O_G_Soldier_LAT_F", "O_G_Soldier_lite_F"],
+	["O_G_Soldier_AR_F", "O_G_Soldier_A_F", "O_G_Soldier_lite_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F", "O_G_Soldier_F","O_G_Soldier_lite_F"],
 	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F"],
 	["O_G_Soldier_SL_F", "O_G_Soldier_LAT2_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F"]
 ];

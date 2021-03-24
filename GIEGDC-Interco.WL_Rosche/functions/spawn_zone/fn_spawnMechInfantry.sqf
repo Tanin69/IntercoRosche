@@ -4,7 +4,7 @@
 Another quick and (not so) dirty function to spawn mechanized infantry
 Place 3 markers in Eden (parameter 0 of the function): 
 - First one : spawn point of mechanized group
-- Second one : area marker in which the infantry group us unloaded. The function look for an area clear of ennemies (hard coded parameters at the moment)
+- Second one : area marker in which the infantry group is unloaded. The function look for an area clear of ennemies
 - Third one : destination WP : group leader is ordered to seek and destroy in the area (SAD Wp type)
 
 Parameters :
