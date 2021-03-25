@@ -1,5 +1,5 @@
 //Le nom de la zone qui sera utilisé pour tous les spawns 
-private _zn = "Klein_3";
+private _zn = "Klein_5";
 private _grpGarn = objNull;
 private _nbPat = objNull;
 private _probaManedFW = objNull;
@@ -12,18 +12,18 @@ switch true do {
 		};
 		case (nbJoueurs > 36 && nbJoueurs < 46): {
 			_grpGarn = GROUPE_PARAMIL_PETIT;
-			_nbPat = [1];
+			_nbPat = [4,5];
 			_probaManedFW = 0.8;
 		};
 		case (nbJoueurs > 45): {
-			_grpGarn = GROUPE_OPFOR_GRAND;
-			_nbPat = [1,2];
+			_grpGarn = GROUPE_PARAMIL_PETIT;
+			_nbPat = [5,6];
 			_probaManedFW = 1;
 		}; 
 };
 
 //Spawn des patrouilles
-[_zn,_nbPat,_grpGarn,opfor] spawn int_fnc_spawnRdmPatrols;
+//[_zn,_nbPat,_grpGarn,opfor] spawn int_fnc_spawnRdmPatrols;
 //[_zn,[1],GROUPE_PARAMIL_MOYEN,opfor] spawn int_fnc_spawnRdmPatrols;
 
 //Spawn des garnisons
@@ -32,4 +32,4 @@ switch true do {
 
 //Spawn des armes fixes
 //[_zn,opfor,"rhs_Igla_AA_pod_msv","rhs_vmf_flora_rifleman",nil,_probaManedFW,nil] spawn int_fnc_spawnFixedWeapons;
-//[_zn,opfor,"rhs_Igla_AA_pod_msv","rhs_vmf_flora_rifleman",nil,1,nil] spawn int_fnc_spawnFixedWeapons;
+[_zn, opfor, "rhsgref_ins_DSHKM", "O_G_Soldier_unarmed_F", 1, _probaManedFW, nil] spawn int_fnc_spawnFixedWeapons;

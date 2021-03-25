@@ -2,6 +2,7 @@
 if (!isMultiplayer) then {
 	DEBUG = true;
 };
+
 PHASE_MISSION = 0;
 
 //Récupère la liste de tous les marqueurs LUCY pour les masquer et les blacklister pour GDC_fnc_chooseSpawnPos
@@ -104,7 +105,7 @@ GROUPE_OPFOR_GRAND = [
 //Parachutage pour les FS
 [pilote] call GDC_fnc_halo;
 
-//Lancement du GPM
+//Lancement du GPM sur le HC
 if (!isServer && !hasInterface) then {
 	[] spawn int_fnc_gamePhaseManager;
 };

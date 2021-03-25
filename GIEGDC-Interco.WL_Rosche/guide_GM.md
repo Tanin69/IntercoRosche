@@ -1,15 +1,36 @@
 # Aide-mémoire pour le GM, au cas où les choses devaient mal tourner
 
-## Initialisation de la partie : dès le lancement
+## Gestion de la partie par le Game Phase Manager (GPM)
 
-* Initialiser la variable du nombre de joueurs via :
-```nbPlayers = 00``` où 00 est le nombre de joueurs prévus
+Attention, le GPM tourne sur le HC car c'est lui qui déclenche les spawn IA !
 
-## Déclenchement des paramil
+## Gestion des phases
 
-Grâce au Game Phase Manager de Morbakos, la seule commande à lancer dans la console est le déclenchement de la phase 2 (assaut des blindés hostiles). En toute logique, cette commande devrait être lancée quelques minutes après l'arrivée des joueurs sur les postes avancés (3 à 5 minutes).
+### Phase 0 (déclenchement manuel)
 
-Pour lancer la phase 2, il suffit d'exécuter dans la console de débogage ```PHASE_MISSION = 2``` sur le HC (sélectionner headless client dans le panneau de droite, puis TARGET EXEC sous la console de saisie)
+* Dès le début de la partie, initialiser la variable du nombre de joueurs :
+
+exécuter sur le ```nbPlayers = 00``` où 00 est le nombre de joueurs prévus;
+
+nbJoueurs < 37 : facile
+
+nbJoueurs entre 35 et 45 : moyen
+
+nbJoueurs > 45 : difficile
+
+-> Ceci va lancer la phase 0 : spawn initial des hostiles
+
+### Phase 1 (déclenchement auto) : harcèlement
+
+* Déclenchement par triggers : les 3 avant-postes doivent être occupés par un joueur
+
+-> Des groupes de paramilitaires viennent harceler les avant-postes
+
+### Phase 2 (déclenchement manuel) : assaut blindé des hostiles
+
+Exécuter sur le HC ```PHASE_MISSION = 2```
+
+-> Un assaut de blindés hostiles est lancé
 
 ## Si problème : spawner les infanteries à la main
 

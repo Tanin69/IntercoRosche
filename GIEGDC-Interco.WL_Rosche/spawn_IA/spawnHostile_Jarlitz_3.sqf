@@ -12,12 +12,12 @@ switch true do {
 		};
 		case (nbJoueurs > 36 && nbJoueurs < 46): {
 			_grpGarn = GROUPE_PARAMIL_PETIT;
-			_nbPat = [4,5];
+			_nbPat = [3];
 			_probaManedFW = 0.8;
 		};
 		case (nbJoueurs > 45): {
 			_grpGarn = GROUPE_PARAMIL_PETIT;
-			_nbPat = [5,6];
+			_nbPat = [3,4];
 			_probaManedFW = 1;
 		}; 
 };
@@ -27,7 +27,7 @@ switch true do {
 //[_zn,[3],GROUPE_PARAMIL_MOYEN,opfor] spawn int_fnc_spawnRdmPatrols;
 
 //Spawn des garnisons
-[_zn,_grpGarn, nil, nil, nil, 0.1, 1] spawn int_fnc_spawnGarnisons;
+[_zn,_grpGarn, nil, nil, nil, 0.1, 0.2] spawn int_fnc_spawnGarnisons;
 //[_zn,GROUPE_PARAMIL_GRAND, nil, nil, nil, 0.1, 1] spawn int_fnc_spawnGarnisons;
 
 //Spawn des armes fixes
