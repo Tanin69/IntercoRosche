@@ -4,7 +4,7 @@ Arma GIE/GDC interco mission on Rosche map and website code
 
 ## Tests à effectuer en réel
 
-* Pression sur l'hélicoptère de combat dans la phase 1, puis dans la phase 2
+* Pression sur l'hélicoptère de combat dans la phase 1, puis dans la phase 2. En gros, vérifier qu'il ne peut pas wiper les 3 villages centraux durant la phase 1 ou 2. 
 * Portée des communications radio, en particulier avec les FS
 * Timing déclenchement des paramil
 * Cohérence / équilibrage du comportement de fuite des paramil
@@ -16,5 +16,5 @@ Arma GIE/GDC interco mission on Rosche map and website code
 * Un CdO
 * Une équipe méca : au moins un chef de bord/pilote/tireur Bradley et au moins un trinôme infanterie
 * Un équipage Abrams (au moins 2)
-* Un équipage AH-64
+* Un équipage AH-64 de très bon niveau
 * GM + chef médic (GM adjoint)
