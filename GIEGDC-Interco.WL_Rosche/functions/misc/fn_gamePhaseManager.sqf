@@ -37,7 +37,7 @@ if(!isNil "DEBUG") then {
 
 waitUntil {
 	sleep 1;
-	(!isNil nbJoueurs)
+	(!isNil "nbJoueurs")
 };
 
 if(!isNil "DEBUG") then {
@@ -77,7 +77,7 @@ if(!isNil "DEBUG") then {
 
 waitUntil { 
 	sleep 1; 
-	(triggerActivated trgNestorIsOccupied)  || (triggerActivated trgCassandreIsOccupied) || (triggerActivated trgSofiaIsOccupied)
+	(triggerActivated trgNestorIsOccupied)  && (triggerActivated trgCassandreIsOccupied) && (triggerActivated trgSofiaIsOccupied)
 };
 
 PHASE_MISSION = 1;

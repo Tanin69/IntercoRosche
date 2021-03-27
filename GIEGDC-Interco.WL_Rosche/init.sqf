@@ -28,7 +28,7 @@ private _tbMrk = allMapMarkers select {["mrk", _x, true] call BIS_fnc_inString};
 gdc_plutoDebug = false;
 
 //On adapte le nombre d'hostiles par rapport au nombre de joueurs
-nbJoueurs = playersNumber west; //-> à initialiser via la console au début de la partie
+//nbJoueurs = playersNumber west; //-> à initialiser via la console au début de la partie
 
 /* Paramil class names :
 O_G_Soldier_F = rifleman

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3250;
+		nextID=3400;
 	};
 	class Camera
 	{
-		pos[]={902.84637,59.381809,4588.1577};
-		dir[]={0.628263,-0.69843858,-0.34276029};
-		up[]={0.61312896,0.71566933,-0.33450329};
-		aside[]={-0.47893143,-3.1222589e-007,-0.87786072};
+		pos[]={872.63898,92.906593,4604.7222};
+		dir[]={0.35722539,-0.47899219,0.80184573};
+		up[]={0.19492418,0.87781918,0.43753645};
+		aside[]={0.91345209,1.4901161e-008,-0.40694645};
 	};
 };
 binarizationWanted=0;
@@ -4968,7 +4968,6 @@ class Mission
 									};
 									id=2185;
 									type="Land_ToolTrolley_01_F";
-									atlOffset=9.5367432e-007;
 								};
 								class Item55
 								{
@@ -23702,7 +23701,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""RHS_Incendiary_Fire"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=3512;
 			type="Logic";
-			atlOffset=0.20564461;
+			atlOffset=0.20560265;
 		};
 		class Item29
 		{
@@ -35198,10 +35197,29 @@ class Mission
 			};
 			id=2188;
 			type="rhsusf_m1043_w";
-			atlOffset=0.00021743774;
+			atlOffset=0.00023174286;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
@@ -35449,25 +35467,6 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
-						};
-					};
-				};
 				class Attribute2
 				{
 					property="rhs_decalMask";
@@ -35563,7 +35562,7 @@ class Mission
 			};
 			id=2190;
 			type="rhsusf_m998_w_4dr_fulltop";
-			atlOffset=0.00045585632;
+			atlOffset=0.00046825409;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -37316,6 +37315,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5493;
 			type="Logic";
+			atlOffset=1.1210403;
 		};
 		class Item118
 		{
@@ -38495,7 +38495,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5499;
 			type="Logic";
-			atlOffset=1.1210442;
+			atlOffset=1.1210403;
 		};
 		class Item124
 		{
