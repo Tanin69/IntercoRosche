@@ -1,5 +1,5 @@
 /*-- countdown  --*/
-var countdownDate = new Date("Apr 15, 2021 21:00:00").getTime();
+var countdownDate = new Date("Apr 13, 2021 21:00:00").getTime();
 var countdownFunc = setInterval(function() {
     var now = new Date().getTime();
     var timeleft = countdownDate - now;

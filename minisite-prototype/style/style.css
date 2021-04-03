@@ -376,6 +376,14 @@ section .content mark {
     display: none !important;
 }
 
+.field .label {
+    color: var(--font-color);
+}
+
+.field .button.is-primary {
+    background-color: var(--font-theme-color);
+}
+
 /*-- footer --*/
 footer.footer {
     background-color: var(--elem-color);
