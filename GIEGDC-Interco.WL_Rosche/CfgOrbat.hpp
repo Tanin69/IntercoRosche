@@ -42,7 +42,7 @@ class CfgORBAT
 			type = "HQ";
 			size = "Regiment";
 			side = "West";
-			commander = "NATOMen";
+			commander = "Tanin69";
 			commanderRank = "MAJOR";
 			text = "2nd MBG"; // Custom text and short text, can still use some arguments when defined:
 			// 	%1 - ID (e.g. "7th")

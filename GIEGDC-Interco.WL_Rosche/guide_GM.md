@@ -32,6 +32,12 @@ Exécuter sur le HC ```PHASE_MISSION = 2```
 
 -> Un assaut de blindés hostiles est lancé
 
+## Spawn des positions renforcées sur Rosche
+
+* Le timer reste actif pour le GPM -> ça évite d'avoir à calculer le temps à la mano.
+* Spawn des premiers renforts -> exécuter ```renforts_rosche_1 = true;``` sur le HC
+* Spawn des seconds renforts -> exécuter ```renforts_rosche_2 = true;``` sur le HC
+
 ## Si problème : spawner les infanteries à la main
 
 Le spawn des hostiles peut être lancé manuellement via la console. Les scripts de spawn hostiles infanterie sont dans le dossier \spawn_IA de la mission. Pour lancer un script, saisir ```execVM ["nomduscript"]``` et exécuter idéalement sur le HC (attention à ne pas exécuter en global !!).

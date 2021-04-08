@@ -17,7 +17,8 @@ if(!isNil "DEBUG") then {
 //Délai d'arrivée des renforts sur Rosche (en minutes)
 private _renforcement_1 = 60;
 private _renforcement_2 = 30;
-private _condition_renforcement = {true};
+private _condition_renforcement_1 = {!isNil "renforts_rosche_1"};
+private _condition_renforcement_2 = {!isNil "renforts_rosche_2"};
 
 if(!isNil "DEBUG") then {
 	if(DEBUG) then {
@@ -128,7 +129,7 @@ sleep 60;
 // Renforcement sur Rosche
 sleep (60*_renforcement_1);
 // On boucle tant qu'on a pas la condition d'avancée dans les fortifications
-while {!_condition_renforcement} do {
+while {!_condition_renforcement_1} do {
 	sleep 60;
 };
 
@@ -142,7 +143,7 @@ systemChat "[GPM] Spawn garnison 1 sur Rosche";
 // Renforcement sur Rosche 2
 sleep (60*_renforcement_2);
 // On boucle tant qu'on a pas la condition d'avancée dans les fortifications
-while {!_condition_renforcement} do {
+while {!_condition_renforcement_2} do {
 	sleep 60;
 };
 
