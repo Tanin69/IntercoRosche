@@ -400,6 +400,15 @@ footer.footer strong {
     color: var(--font-color);
 }
 
+/*-- 404 --*/
+.error-page .logo {
+    font-size: 240px;
+}
+
+.error-page p.error-content {
+    font-size: 35px;
+}
+
 /*-- media queries --*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -430,6 +439,12 @@ footer.footer strong {
 
     section .content .columns:last-child {
         border-radius: 0px 0px 5px 5px;
+    }
+
+    /*-- 404 --*/
+    .error-page .is-center {
+        display: flex;
+        justify-content: center;
     }
 
     /*-- footer --*/
