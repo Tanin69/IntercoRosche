@@ -2,7 +2,6 @@ params ["_unit"];
 
 if (isNull _unit) exitWith {};
 
-// Remove existing items
 removeAllWeapons _unit;
 removeAllItems _unit;
 removeAllAssignedItems _unit;
@@ -12,19 +11,15 @@ removeBackpack _unit;
 removeHeadgear _unit;
 removeGoggles _unit;
 
-// Add weapons
-_unit addWeapon "rhsusf_weap_glock17g4";
-_unit addHandgunItem "rhsusf_mag_17Rnd_9x19_JHP";
+_unit addWeapon "rhs_weap_m249_pip_S_para";
+_unit addPrimaryWeaponItem "OFrP_OpticItem_Scrome_J4";
+_unit addPrimaryWeaponItem "rhsusf_200Rnd_556x45_box";
+_unit addPrimaryWeaponItem "rhsusf_acc_kac_grip_saw_bipod";
 
-// Add containers
-_unit forceAddUniform "OFrP_Uniform_T4S2_Full_DA_FRHV_CDTBV";
-_unit addBackpack "B_Kitbag_tan";
+_unit forceAddUniform "OFrP_Uniform_T4S2_UBAS_CE01_FRBV_1CLBV";
+_unit addVest "OFrP_Vest_CIRAS_MachineGunner_MJK";
+_unit addBackpack "OFrP_Bag_CamelbakBFM500_OD";
 
-// Add binoculars
-_unit addWeapon "rhsusf_bino_lerca_1200_tan";
-
-// Add items to containers
-_unit addItemToUniform "ACE_epinephrine";
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_morphine";};
 for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 5 do {_unit addItemToUniform "ACE_elasticBandage";};
@@ -32,11 +27,13 @@ _unit addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_tourniquet";};
 _unit addItemToUniform "ACE_Flashlight_MX991";
 _unit addItemToUniform "ACE_MapTools";
-_unit addItemToUniform "ACE_Cellphone";
-_unit addItemToBackpack "ACRE_PRC117F";
-_unit addHeadgear "H_Beret_02";
+_unit addItemToUniform "ACRE_PRC343";
+for "_i" from 1 to 4 do {_unit addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_m67";};
+for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_100Rnd_556x45_mixed_soft_pouch";};
+_unit addHeadgear "OFrP_Helmet_TC3000_cover_ESSCOVER_CE";
 
-// Add items
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
+[_unit, "92RI"] call BIS_fnc_setUnitInsignia;

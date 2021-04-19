@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3400;
+		nextID=3500;
 	};
 	class Camera
 	{
-		pos[]={872.63898,92.906593,4604.7222};
-		dir[]={0.35722539,-0.47899219,0.80184573};
-		up[]={0.19492418,0.87781918,0.43753645};
-		aside[]={0.91345209,1.4901161e-008,-0.40694645};
+		pos[]={925.4364,21.837908,4572.4082};
+		dir[]={0.93857431,-0.33669695,-0.075603336};
+		up[]={0.33561051,0.94161242,-0.02703397};
+		aside[]={-0.080290645,3.2116077e-008,-0.99677217};
 	};
 };
 binarizationWanted=0;
@@ -3288,7 +3288,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Build";
-			state=2;
 			class Entities
 			{
 				items=3;
@@ -3976,13 +3975,12 @@ class Mission
 						};
 					};
 					id=2534;
-					atlOffset=-6.6900001;
+					atlOffset=-2.264122;
 				};
 				class Item1
 				{
 					dataType="Layer";
 					name="blufor";
-					state=2;
 					class Entities
 					{
 						items=4;
@@ -4275,7 +4273,7 @@ class Mission
 									};
 									id=1594;
 									type="OmniDirectionalAntenna_01_sand_F";
-									atlOffset=13.096894;
+									atlOffset=3.9868946;
 								};
 								class Item16
 								{
@@ -4286,13 +4284,14 @@ class Mission
 										angles[]={0,5.539103,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1582;
 									type="Land_PCSet_01_case_F";
-									atlOffset=9.1100016;
+									atlOffset=1.9073486e-006;
 								};
 								class Item17
 								{
@@ -4303,13 +4302,14 @@ class Mission
 										angles[]={0,5.5661445,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1584;
 									type="Land_PCSet_01_keyboard_F";
-									atlOffset=9.9969988;
+									atlOffset=6.2942505e-005;
 								};
 								class Item18
 								{
@@ -4320,13 +4320,14 @@ class Mission
 										angles[]={0,5.5311685,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1585;
 									type="Land_PCSet_01_mousepad_F";
-									atlOffset=9.9969988;
+									atlOffset=6.2942505e-005;
 								};
 								class Item19
 								{
@@ -4337,13 +4338,14 @@ class Mission
 										angles[]={0,5.4480205,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1586;
 									type="Land_PCSet_01_mouse_F";
-									atlOffset=10.011327;
+									atlOffset=0.0070648193;
 								};
 								class Item20
 								{
@@ -4354,13 +4356,14 @@ class Mission
 										angles[]={0,5.5174499,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1583;
 									type="Land_PCSet_01_screen_F";
-									atlOffset=9.9969988;
+									atlOffset=6.2942505e-005;
 								};
 								class Item21
 								{
@@ -4371,13 +4374,14 @@ class Mission
 										angles[]={0,5.5320935,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1591;
 									type="Land_Printer_01_F";
-									atlOffset=9.9969988;
+									atlOffset=6.2942505e-005;
 								};
 								class Item22
 								{
@@ -4388,13 +4392,14 @@ class Mission
 										angles[]={0,2.3647113,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1590;
 									type="Fridge_01_closed_F";
-									atlOffset=9.1100016;
+									atlOffset=1.9073486e-006;
 								};
 								class Item23
 								{
@@ -4422,13 +4427,13 @@ class Mission
 										angles[]={0,5.532774,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1588;
 									type="Land_IPPhone_01_sand_F";
-									atlOffset=10.006173;
 								};
 								class Item25
 								{
@@ -4439,13 +4444,14 @@ class Mission
 										angles[]={0,2.4012723,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1581;
 									type="Land_PortableCabinet_01_7drawers_black_F";
-									atlOffset=9.1100016;
+									atlOffset=1.9073486e-006;
 								};
 								class Item26
 								{
@@ -4456,13 +4462,14 @@ class Mission
 										angles[]={0,3.9670238,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1580;
 									type="Land_PortableCabinet_01_bookcase_black_F";
-									atlOffset=9.1100016;
+									atlOffset=1.9073486e-006;
 								};
 								class Item27
 								{
@@ -4473,13 +4480,14 @@ class Mission
 										angles[]={0,2.3896775,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1579;
 									type="Land_PortableDesk_01_black_F";
-									atlOffset=9.1100016;
+									atlOffset=1.9073486e-006;
 								};
 								class Item28
 								{
@@ -4490,13 +4498,13 @@ class Mission
 										angles[]={0,5.5350251,0};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										dynamicSimulation=1;
 									};
 									id=1587;
 									type="Land_Router_01_sand_F";
-									atlOffset=10.006173;
 								};
 								class Item29
 								{
@@ -4513,7 +4521,7 @@ class Mission
 									};
 									id=1592;
 									type="SatelliteAntenna_01_Sand_F";
-									atlOffset=12.969384;
+									atlOffset=6.0017376;
 								};
 								class Item30
 								{
@@ -4530,7 +4538,7 @@ class Mission
 									};
 									id=1593;
 									type="SatelliteAntenna_01_Sand_F";
-									atlOffset=12.981542;
+									atlOffset=3.871542;
 								};
 								class Item31
 								{
@@ -5001,7 +5009,7 @@ class Mission
 									};
 									id=1589;
 									type="Land_WaterCooler_01_new_F";
-									atlOffset=9.3998728;
+									atlOffset=0.28987312;
 								};
 								class Item57
 								{
@@ -5895,7 +5903,7 @@ class Mission
 										};
 									};
 									id=4528;
-									atlOffset=-6.6900001;
+									atlOffset=-0.064042091;
 								};
 								class Item68
 								{
@@ -6575,7 +6583,7 @@ class Mission
 										};
 									};
 									id=4529;
-									atlOffset=-6.6900001;
+									atlOffset=-0.0046520233;
 								};
 								class Item69
 								{
@@ -7269,7 +7277,7 @@ class Mission
 										};
 									};
 									id=4606;
-									atlOffset=-6.6900001;
+									atlOffset=-0.077382088;
 								};
 								class Item70
 								{
@@ -11235,7 +11243,7 @@ class Mission
 										};
 									};
 									id=4702;
-									atlOffset=-6.6900001;
+									atlOffset=0.062972069;
 								};
 								class Item71
 								{
@@ -11538,7 +11546,7 @@ class Mission
 											};
 											id=4832;
 											type="ClutterCutter_EP1";
-											atlOffset=1.953145;
+											atlOffset=0.76394272;
 										};
 										class Item3
 										{
@@ -13836,7 +13844,7 @@ class Mission
 										};
 									};
 									id=5007;
-									atlOffset=-6.6900001;
+									atlOffset=-0.15428829;
 								};
 								class Item87
 								{
@@ -13946,7 +13954,7 @@ class Mission
 											};
 											id=4675;
 											type="Land_EmergencyBlanket_02_F";
-											atlOffset=0.78281021;
+											atlOffset=0.04520607;
 										};
 										class Item6
 										{
@@ -14359,13 +14367,14 @@ class Mission
 												angles[]={0,6.1870451,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=4701;
 											type="Land_Stethoscope_01_F";
-											atlOffset=0.81599712;
+											atlOffset=0.00039958954;
 										};
 										class Item24
 										{
@@ -14376,13 +14385,14 @@ class Mission
 												angles[]={0,0.80685174,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=4696;
 											type="Land_Bandage_F";
-											atlOffset=0.83790112;
+											atlOffset=0.022303581;
 										};
 										class Item25
 										{
@@ -14393,13 +14403,14 @@ class Mission
 												angles[]={0,0.80685174,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=4697;
 											type="Land_Bandage_F";
-											atlOffset=0.83790112;
+											atlOffset=0.022303581;
 										};
 										class Item26
 										{
@@ -14427,13 +14438,14 @@ class Mission
 												angles[]={0,3.8419003,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=4699;
 											type="Land_Defibrillator_F";
-											atlOffset=0.81599617;
+											atlOffset=0.00039863586;
 										};
 										class Item28
 										{
@@ -14444,13 +14456,14 @@ class Mission
 												angles[]={0,3.9231708,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=4700;
 											type="Land_FirstAidKit_01_open_F";
-											atlOffset=0.81599808;
+											atlOffset=0.00040054321;
 										};
 										class Item29
 										{
@@ -14626,7 +14639,7 @@ class Mission
 											};
 											id=5322;
 											type="Land_EmergencyBlanket_02_F";
-											atlOffset=0.99599171;
+											atlOffset=0.49568272;
 										};
 										class Item39
 										{
@@ -14643,7 +14656,7 @@ class Mission
 											};
 											id=5323;
 											type="Land_EmergencyBlanket_02_F";
-											atlOffset=0.78281116;
+											atlOffset=0.045207024;
 										};
 										class Item40
 										{
@@ -14988,13 +15001,13 @@ class Mission
 												angles[]={0,0.4799304,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5339;
 											type="Land_Stethoscope_01_F";
-											atlOffset=0.81559753;
 										};
 										class Item54
 										{
@@ -15005,13 +15018,13 @@ class Mission
 												angles[]={0,5.5386119,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5340;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item55
 										{
@@ -15022,13 +15035,13 @@ class Mission
 												angles[]={0,5.5386119,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5341;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item56
 										{
@@ -15056,13 +15069,13 @@ class Mission
 												angles[]={0,0.73658735,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5343;
 											type="Land_Defibrillator_F";
-											atlOffset=0.81559753;
 										};
 										class Item58
 										{
@@ -15073,13 +15086,13 @@ class Mission
 												angles[]={0,0.7676264,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5344;
 											type="Land_FirstAidKit_01_open_F";
-											atlOffset=0.81559753;
 										};
 										class Item59
 										{
@@ -15214,13 +15227,13 @@ class Mission
 												angles[]={0,5.5386119,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5429;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item67
 										{
@@ -15231,13 +15244,13 @@ class Mission
 												angles[]={0,5.5386119,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5430;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item68
 										{
@@ -15248,13 +15261,13 @@ class Mission
 												angles[]={0,0.72126603,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5431;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item69
 										{
@@ -15265,13 +15278,13 @@ class Mission
 												angles[]={0,0.72126603,0};
 											};
 											side="Empty";
+											flags=4;
 											class Attributes
 											{
 												dynamicSimulation=1;
 											};
 											id=5432;
 											type="Land_Bandage_F";
-											atlOffset=0.81559753;
 										};
 										class Item70
 										{
@@ -15738,11 +15751,10 @@ class Mission
 										};
 									};
 									id=4676;
-									atlOffset=-6.6900001;
 								};
 							};
 							id=2530;
-							atlOffset=-6.6900001;
+							atlOffset=-1.9594278;
 						};
 						class Item1
 						{
@@ -16183,7 +16195,7 @@ class Mission
 								};
 							};
 							id=2529;
-							atlOffset=-6.6900001;
+							atlOffset=-0.8938179;
 						};
 						class Item2
 						{
@@ -16660,7 +16672,7 @@ class Mission
 								};
 							};
 							id=2533;
-							atlOffset=-6.6900001;
+							atlOffset=-0.047462463;
 						};
 						class Item3
 						{
@@ -17360,11 +17372,11 @@ class Mission
 								};
 							};
 							id=2531;
-							atlOffset=-6.6900001;
+							atlOffset=-0.19974518;
 						};
 					};
 					id=2569;
-					atlOffset=-6.6900001;
+					atlOffset=10.608135;
 				};
 				class Item2
 				{
@@ -18750,7 +18762,7 @@ class Mission
 						};
 					};
 					id=2570;
-					atlOffset=-6.6900001;
+					atlOffset=1.5867157;
 				};
 			};
 			id=2528;
@@ -20875,7 +20887,7 @@ class Mission
 							type="mil_dot";
 							colorName="ColorEAST";
 							id=2826;
-							atlOffset=0.00026893616;
+							atlOffset=0.080446243;
 						};
 						class Item16
 						{
@@ -29767,7 +29779,6 @@ class Mission
 		{
 			dataType="Layer";
 			name="Rosche";
-			state=2;
 			class Entities
 			{
 				items=3;
@@ -30107,7 +30118,7 @@ class Mission
 								};
 							};
 							id=3620;
-							atlOffset=-6.6900001;
+							atlOffset=0.009847641;
 						};
 						class Item1
 						{
@@ -30487,7 +30498,7 @@ class Mission
 								};
 							};
 							id=3717;
-							atlOffset=-6.6900001;
+							atlOffset=-0.0018939972;
 						};
 						class Item2
 						{
@@ -30875,7 +30886,7 @@ class Mission
 								};
 							};
 							id=3755;
-							atlOffset=-6.6900001;
+							atlOffset=0.019859314;
 						};
 						class Item3
 						{
@@ -31491,11 +31502,11 @@ class Mission
 								};
 							};
 							id=4227;
-							atlOffset=-6.6900001;
+							atlOffset=12.403595;
 						};
 					};
 					id=3602;
-					atlOffset=-6.6900001;
+					atlOffset=5.2615795;
 				};
 				class Item1
 				{
@@ -32029,7 +32040,7 @@ class Mission
 								};
 							};
 							id=4131;
-							atlOffset=-6.6900001;
+							atlOffset=0.0014839172;
 						};
 						class Item11
 						{
@@ -32259,7 +32270,7 @@ class Mission
 								};
 							};
 							id=4197;
-							atlOffset=-6.6900001;
+							atlOffset=-0.013338089;
 						};
 						class Item14
 						{
@@ -32517,11 +32528,11 @@ class Mission
 								};
 							};
 							id=4355;
-							atlOffset=-6.6900001;
+							atlOffset=-0.0011081696;
 						};
 					};
 					id=3794;
-					atlOffset=-6.6900001;
+					atlOffset=3.549099;
 				};
 				class Item2
 				{
@@ -33468,7 +33479,7 @@ class Mission
 								};
 							};
 							id=2573;
-							atlOffset=-6.6900001;
+							atlOffset=1.1539917;
 						};
 						class Item1
 						{
@@ -33847,7 +33858,7 @@ class Mission
 									};
 									id=4248;
 									type="EvMap";
-									atlOffset=1.3333664;
+									atlOffset=0.53298378;
 								};
 								class Item21
 								{
@@ -33864,7 +33875,7 @@ class Mission
 									};
 									id=4249;
 									type="Land_FilePhotos_F";
-									atlOffset=1.3518772;
+									atlOffset=0.55149078;
 								};
 								class Item22
 								{
@@ -34453,7 +34464,7 @@ class Mission
 								};
 							};
 							id=2574;
-							atlOffset=-6.6900001;
+							atlOffset=-0.028022766;
 						};
 						class Item2
 						{
@@ -34624,7 +34635,7 @@ class Mission
 								};
 							};
 							id=4357;
-							atlOffset=-6.6900001;
+							atlOffset=0.015930176;
 						};
 						class Item3
 						{
@@ -34647,7 +34658,7 @@ class Mission
 						};
 					};
 					id=4356;
-					atlOffset=-6.6900001;
+					atlOffset=-0.97263336;
 				};
 			};
 			id=3601;
@@ -36919,13 +36930,12 @@ class Mission
 				angles[]={0,3.7975919,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 			};
 			id=5478;
 			type="Land_PortableLight_02_single_folded_black_F";
-			atlOffset=9.9969358;
 		};
 		class Item110
 		{
@@ -36936,13 +36946,12 @@ class Mission
 				angles[]={0,3.9464059,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 			};
 			id=5479;
 			type="Land_PortableLight_02_quad_black_F";
-			atlOffset=9.1099997;
 		};
 		class Item111
 		{
@@ -40829,7 +40838,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -41537,7 +41546,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -41690,7 +41699,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -41843,7 +41852,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -42015,7 +42024,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44070,7 +44079,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44245,7 +44254,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44420,7 +44429,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44595,7 +44604,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44770,7 +44779,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -44945,7 +44954,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -45120,7 +45129,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -45295,7 +45304,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -45470,7 +45479,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -46032,7 +46041,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -46212,7 +46221,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -46392,7 +46401,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -47738,7 +47747,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -47918,7 +47927,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -48098,7 +48107,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -49409,7 +49418,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -49589,7 +49598,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -49646,7 +49655,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
 							class Value
 							{
 								class data
@@ -49802,7 +49811,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -49859,7 +49868,7 @@ class Mission
 						class Attribute3
 						{
 							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
 							class Value
 							{
 								class data
@@ -51132,7 +51141,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -51312,7 +51321,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -51492,7 +51501,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isEngineer";
-							expression="if !(_value == ([0,1] select (_this getUnitTrait 'engineer'))|| {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
 							class Value
 							{
 								class data
@@ -53644,7 +53653,7 @@ class Mission
 				class Attribute0
 				{
 					property="ace_isMedicalVehicle";
-					expression="_this setVariable [""ace_medical_isMedicalVehicle"",_value,true]";
+					expression="_this setVariable [""ace_medical_isMedicalVehicle"", _value, true]";
 					class Value
 					{
 						class data

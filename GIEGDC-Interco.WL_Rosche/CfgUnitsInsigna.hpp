@@ -26,7 +26,7 @@ class CfgUnitInsignia
 
 	class 126RI
 	{
-		displayName = "24eme Régiment d'Infanterie";	// Name displayed in Arsenal
+		displayName = "126eme Régiment d'Infanterie";	// Name displayed in Arsenal
 		author = "Bohemia Interactive";				// Author displayed in Arsenal
 		texture = "ORBAT\126RI.paa"; // Image path
 		textureVehicle = "";						// Currently does nothing, reserved for future use

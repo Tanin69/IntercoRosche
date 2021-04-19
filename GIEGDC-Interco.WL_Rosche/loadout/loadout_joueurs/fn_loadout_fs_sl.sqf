@@ -49,3 +49,4 @@ _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
 _unit linkItem "OFrP_Lucie";
+[_unit, "1erRPIMa"] call BIS_fnc_setUnitInsignia;

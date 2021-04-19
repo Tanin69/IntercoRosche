@@ -38,5 +38,4 @@ _unit addGoggles "G_Bandanna_tan";
 _unit linkItem "ItemMap";
 _unit linkItem "ItemCompass";
 _unit linkItem "ItemWatch";
-
-[_unit,"WhiteHead_09","male11eng"] call BIS_fnc_setIdentity;
+[_unit, "7thCav"] call BIS_fnc_setUnitInsignia;

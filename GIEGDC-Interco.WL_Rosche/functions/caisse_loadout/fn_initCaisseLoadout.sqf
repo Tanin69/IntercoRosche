@@ -26,6 +26,7 @@ if (_action) then {
 };
 
 // On créé toutes les actions 
+// Commandement
 private _action_loadout_qg = [
 	"_action_loadout_qg",
 	"Loadout Battle Group Command",
@@ -49,7 +50,7 @@ private _action_loadout_commandement_second_operation = [
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 
-
+// 82nd
 private _action_loadout_82nd_pilote_uh60 = [
 	"_action_loadout_82nd_pilote_uh60",
 	"Loadout pilote UH-60",
@@ -100,7 +101,7 @@ private _action_loadout_82nd_auxsan = [
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 
-
+// FS
 private _action_loadout_fs_sl = [
 	"_action_loadout_fs_sl",
 	"Loadout Chef de Section",
@@ -137,7 +138,7 @@ private _action_loadout_fs_operateur = [
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 
-
+// 7th
 private _action_loadout_7th_chef_abrams = [
 	"_action_loadout_7th_chef_abrams",
 	"Loadout Chef de char - Abrams",
@@ -181,7 +182,7 @@ private _action_loadout_7th_conducteur_bradley = [
 	{true}
 ] call ace_interact_menu_fnc_createAction;
 
-
+// 92RI
 private _action_loadout_92ri_sl = [
 	"_action_loadout_92ri_sl",
 	"Loadout Chef de Section mécanisée",
@@ -447,48 +448,48 @@ private _action_categorie_92ri = [
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_sl
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_opr
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_chef_groupe
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_mg
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_mg_leger
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_assist_mg
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_auxsan
 ] call ace_interact_menu_fnc_addActionToObject;
 [
 	_box,
 	0,
-	["ACE_MainActions", "_action_categorie_92RI"],
+	["ACE_MainActions", "_action_categorie_92ri"],
 	_action_loadout_92ri_fusilier
 ] call ace_interact_menu_fnc_addActionToObject;
