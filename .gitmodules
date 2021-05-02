@@ -1,4 +1,4 @@
 [submodule "minisite"]
 	path = minisite
 	url = https://github.com/oxypomme/GDCLobby.git
-	branch = master
+	branch = main
