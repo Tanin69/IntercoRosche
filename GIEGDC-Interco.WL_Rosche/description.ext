@@ -8,7 +8,7 @@ overViewPictureLocked = "loadScreen.jpg";
 overviewText = "Operation Rogue Wave Piercer";
 overviewTextLocked = "Operation Rogue Wave Piercer";
 // - Author
-author = "Tisma, Morbakos, Stians (GIE) & tanin69 (GdC)"; 
+author = "Tisma, Morbakos, Stians (GIE) & tanin69, OxyTom (GdC)"; 
 // - Type de mission (informatif)
 class Header
 {

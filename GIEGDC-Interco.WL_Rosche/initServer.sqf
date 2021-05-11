@@ -12,6 +12,5 @@
 [UH60,"cargo_UH60"] call int_fnc_cargoVehicle;
 [AH64,"cargo_AH64"] call int_fnc_cargoVehicle;
 
-
-
-
+[hemtt_ammo, 15] call ace_cargo_fnc_setSpace;
+[hemtt_ammo, "cargo_hemtt_mun"] call int_fnc_cargoVehicle;

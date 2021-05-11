@@ -27,6 +27,7 @@ _unit addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_tourniquet";};
 _unit addItemToUniform "ACE_Flashlight_MX991";
 for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_M855_Stanag_Pull";};
+_unit addItemToVest "ACRE_PRC148";
 _unit addHeadgear "rhsusf_hgu56p_visor_green";
 
 _unit linkItem "ItemMap";

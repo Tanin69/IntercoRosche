@@ -41,6 +41,14 @@ class CfgFunctions
 			class setUnitLoadout {};
 		};
 
+		class BFT 
+		{
+			file="functions\BFT";
+			class initBFT {
+				postInit = 1;
+			};
+		}
+
 		class loadout_joueurs
 		{
 			file="loadout\loadout_joueurs";

@@ -112,4 +112,10 @@ switch (_cargo) do {
 		_veh addItemCargoGlobal ["SmokeShellRed",5];
 		_veh addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 30];
 	};
+	//Cargo du HEMTT mun
+	case "cargo_hemtt_mun": {
+		for "_i" from 1 to 7 do {
+			["ACE_Track", _veh] call ace_cargo_fnc_loadItem;
+		};
+	};
 };
