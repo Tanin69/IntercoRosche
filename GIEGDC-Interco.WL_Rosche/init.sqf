@@ -12,7 +12,7 @@ private _tbMrk = allMapMarkers select {["mrk", _x, true] call BIS_fnc_inString};
 {_x setMarkerAlpha 0.0} forEach _tbMrk;
 
 // A SUPPRIMER POUR LA VRAIE OP
-// {_x setMarkerAlpha 0} forEach allMapMarkers select {["marker_poste_avance", _x, true] call BIS_fnc_inString};
+{_x setMarkerAlpha 0} forEach allMapMarkers select {["marker_poste_avance", _x, true] call BIS_fnc_inString};
 
 //PLUTO Opfor
 [
