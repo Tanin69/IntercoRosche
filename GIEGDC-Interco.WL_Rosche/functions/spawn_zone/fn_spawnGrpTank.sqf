@@ -22,7 +22,7 @@ _veh3 setConvoySeparation 50;
 
 // CARELESS behavior to force the convoy to follow roads (forceFollowRoad seems to be buggy)
 _vehgrp = group driver _veh;
-_vehgrp setBehaviour "CARELESS";
+_vehgrp setBehaviour "SAFE";
 _vehgrp setFormation "COLUMN";
 
 _vehgrp setVariable ["PLUTO_ORDER","QRF"];

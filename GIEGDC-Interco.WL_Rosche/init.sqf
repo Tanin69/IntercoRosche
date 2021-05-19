@@ -47,28 +47,28 @@ O_G_officer_F = instructeur armée régulière
 
 // Groupes PARAMIL. De 3 à 4 pax.
 GROUPE_PARAMIL_PETIT = [
-	["O_G_Soldier_lite_F","O_G_Soldier_LAT_F"],
-	["O_G_Soldier_lite_F", "O_G_Soldier_LAT_F", "O_G_Soldier_lite_F"],
+	["O_G_Soldier_lite_F","O_G_Soldier_AR_F"],
+	["O_G_Soldier_lite_F", "O_G_Soldier_A_F", "O_G_Soldier_lite_F"],
 	["O_G_Soldier_AR_F", "O_G_Soldier_A_F", "O_G_Soldier_lite_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F", "O_G_Soldier_F","O_G_Soldier_lite_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT2_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F"]
+	["O_G_Soldier_SL_F", "O_G_Soldier_F", "O_G_Soldier_F","O_G_Soldier_LAT_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_AR_F","O_G_Soldier_F", "O_G_Soldier_LAT_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F"]
 ];
 
 // Groupes PARAMIL. De 5 à 7 pax.
 GROUPE_PARAMIL_MOYEN = [
-	["O_G_Soldier_SL_F", "O_G_Soldier_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_LAT_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_LAT_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F"],
-	["O_G_Soldier_SL_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F" ]
+	["O_G_Soldier_SL_F", "O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_AR_F", "O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_A_F","O_G_Soldier_AR_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_A_F", "O_G_Soldier_AR_F", "O_G_Soldier_LAT_F","O_G_Soldier_F","O_G_Soldier_A_F"],
+	["O_G_Soldier_SL_F", "O_G_Soldier_F", "O_G_Soldier_F", "O_G_Soldier_LAT_F", "O_G_Soldier_A_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F" ]
 
 ];
 
 // Groupes PARAMIL. De 8 à 10 pax.
 GROUPE_PARAMIL_GRAND = [
-	["O_G_officer_F", "O_G_Soldier_LAT2_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_LAT_F","O_G_Soldier_lite_F"],
-	["O_G_officer_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_LAT_F", "O_G_Soldier_A_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_AR_F","O_G_Soldier_LAT2_F"],
-	["rhs_vmf_flora_officer", "O_G_Soldier_lite_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F", "O_G_Soldier_LAT_F","O_G_Soldier_LAT_F", "O_G_Soldier_lite_F"]
+	["O_G_officer_F", "O_G_Soldier_LAT2_F","O_G_Soldier_lite_F", "O_G_Soldier_F", "O_G_Soldier_A_F", "O_G_Soldier_AR_F","O_G_Soldier_lite_F","O_G_Soldier_lite_F"],
+	["O_G_officer_F", "O_G_Soldier_LAT_F","O_G_Soldier_F", "O_G_Soldier_A_F", "O_G_Soldier_A_F","O_G_Soldier_F", "O_G_Soldier_lite_F", "O_G_Soldier_AR_F","O_G_Soldier_AR_F"],
+	["rhs_vmf_flora_officer", "O_G_Soldier_lite_F","O_G_Soldier_AR_F", "O_G_Soldier_A_F","O_G_Soldier_F","O_G_Soldier_LAT2_F", "O_G_Soldier_A_F", "O_G_Soldier_A_F","O_G_Soldier_LAT_F", "O_G_Soldier_lite_F"]
 ];
 
 /* Ukraine class name :

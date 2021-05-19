@@ -16,7 +16,7 @@ switch true do {
 			_probaManedFW = 0.8;
 		};
 		case (nbJoueurs > 45): {
-			_grpGarn = GROUPE_OPFOR_GRAND;
+			_grpGarn = GROUPE_PARAMIL_GRAND;
 			_nbPat = [1,2];
 			_probaManedFW = 1;
 		}; 

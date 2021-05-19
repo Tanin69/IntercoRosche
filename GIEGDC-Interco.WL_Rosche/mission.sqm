@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6043;
+		nextID=6054;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3600;
+		nextID=3650;
 	};
 	class Camera
 	{
-		pos[]={765.89105,91.519501,4689.1064};
-		dir[]={0.64528394,-0.41274115,-0.64285511};
-		up[]={0.29240283,0.91084743,-0.29130268};
-		aside[]={-0.70577556,-1.1024531e-007,-0.70844078};
+		pos[]={6895.4854,42.923416,6500.1528};
+		dir[]={0.93254876,-0.36108503,-0.00018441569};
+		up[]={0.36109349,0.93253064,-7.175115e-005};
+		aside[]={-0.0001978341,9.5322953e-008,-1.0000159};
 	};
 };
 binarizationWanted=0;
@@ -931,7 +931,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -986,7 +986,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -3284,7 +3284,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=246;
+		items=247;
 		class Item0
 		{
 			dataType="Logic";
@@ -23728,7 +23728,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""RHS_Incendiary_Fire"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=3512;
 			type="Logic";
-			atlOffset=0.20564461;
+			atlOffset=0.20560265;
 		};
 		class Item29
 		{
@@ -35229,25 +35229,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 					class Value
@@ -35491,6 +35472,25 @@ class Mission
 									};
 								};
 							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
 						};
 					};
 				};
@@ -36481,7 +36481,7 @@ class Mission
 			};
 			id=2128;
 			type="RHS_C130J";
-			atlOffset=9.5367432e-007;
+			atlOffset=-0.13433361;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -38520,7 +38520,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5499;
 			type="Logic";
-			atlOffset=1.120945;
+			atlOffset=1.1209412;
 		};
 		class Item124
 		{
@@ -54044,6 +54044,16 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item246
+		{
+			dataType="Group";
+			side="East";
+			class Attributes
+			{
+			};
+			id=6045;
+			atlOffset=-6.6966667;
 		};
 	};
 	class Connections
