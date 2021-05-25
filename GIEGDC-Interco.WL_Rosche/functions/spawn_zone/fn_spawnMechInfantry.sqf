@@ -42,7 +42,7 @@ _tbVeh = [getMarkerpos (_tbWP#0), _vehHeading, _clsVeh, _grpInf] call BIS_fnc_sp
 //Tester ce qu'il se passe si le véhicule se fait intercepter en chemin ! 
 _unloadPos = [_tbWP#1,200,opfor] call int_fnc_findClearZoneInArea;
 _wpUnload = _grpInf addWaypoint [_unloadPos, -1];
-_wpUnload setWaypointBehaviour "CARELESS";
+_wpUnload setWaypointBehaviour "SAFE";
 _wpUnload setWaypointType "UNLOAD";
 _wpUnload setWaypointStatements ["true","[(group this)] spawn {params['_grp'];while {true} do {assignedVehicle leader _grp doFollow leader _grp;_grp setVariable ['PLUTO_ORDER','QRF'];sleep 20;}}"];
 
