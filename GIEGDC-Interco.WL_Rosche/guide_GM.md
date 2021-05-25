@@ -10,7 +10,7 @@ Attention, le GPM tourne sur le HC car c'est lui qui déclenche les spawn IA !
 
 * Dès le début de la partie, initialiser la variable du nombre de joueurs :
 
-exécuter sur le ```nbPlayers = 00``` où 00 est le nombre de joueurs prévus;
+exécuter sur le ```nbJoueurs = 00``` où 00 est le nombre de joueurs prévus;
 
 nbJoueurs < 37 : facile
 
