@@ -1,9 +1,9 @@
 ﻿// Affichage durant l'écran de choix de mission
 // - Image pour l'écran de sélection
-/*
-overViewPicture       = "loadScreen.jpg";
-overViewPictureLocked = "loadScreen.jpg";
-*/
+
+overViewPicture       = "loadscreen.jpg";
+overViewPictureLocked = "loadscreen.jpg";
+
 // - Texte de description
 overviewText = "Operation Rogue Wave Piercer";
 overviewTextLocked = "Operation Rogue Wave Piercer";

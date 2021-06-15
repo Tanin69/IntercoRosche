@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3650;
+		nextID=3700;
 	};
 	class Camera
 	{
-		pos[]={6984.4375,85.84581,6531.8833};
-		dir[]={0.42559835,-0.25735605,-0.86757082};
-		up[]={0.11335076,0.96631438,-0.23106328};
-		aside[]={-0.89781338,1.4013494e-007,-0.44043291};
+		pos[]={782.31995,40.130001,4646.835};
+		dir[]={0.75701809,-0.4206714,-0.49998721};
+		up[]={0.35102698,0.90720928,-0.23184219};
+		aside[]={-0.55112088,-6.519258e-009,-0.83443916};
 	};
 };
 binarizationWanted=0;
@@ -3284,7 +3284,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=247;
+		items=246;
 		class Item0
 		{
 			dataType="Logic";
@@ -4974,6 +4974,7 @@ class Mission
 									};
 									id=2184;
 									type="Land_ToolTrolley_02_F";
+									atlOffset=0.054534912;
 								};
 								class Item54
 								{
@@ -4991,7 +4992,6 @@ class Mission
 									};
 									id=2185;
 									type="Land_ToolTrolley_01_F";
-									atlOffset=0.055578232;
 								};
 								class Item55
 								{
@@ -5043,7 +5043,6 @@ class Mission
 									};
 									id=2186;
 									type="Land_WeldingTrolley_01_F";
-									atlOffset=0.056817055;
 								};
 								class Item58
 								{
@@ -23728,7 +23727,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""RHS_Incendiary_Fire"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=3512;
 			type="Logic";
-			atlOffset=0.20560265;
+			atlOffset=0.20564461;
 		};
 		class Item29
 		{
@@ -35224,10 +35223,29 @@ class Mission
 			};
 			id=2188;
 			type="rhsusf_m1043_w";
-			atlOffset=0.00023174286;
+			atlOffset=0.00021743774;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="VehicleCustomization";
 					expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
@@ -35475,25 +35493,6 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="rhs_decalDoors";
-					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
-						};
-					};
-				};
 				class Attribute2
 				{
 					property="rhs_decalMask";
@@ -35589,7 +35588,7 @@ class Mission
 			};
 			id=2190;
 			type="rhsusf_m998_w_4dr_fulltop";
-			atlOffset=0.00046730042;
+			atlOffset=0.00045490265;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -38520,7 +38519,7 @@ class Mission
 			init="call{_src = ""#particlesource"" createVehicleLocal [0,0,0];" \n "_src setParticleClass ""HouseDestrSmokeLong"";" \n "_src attachTo [this,[0,0,0]];}";
 			id=5499;
 			type="Logic";
-			atlOffset=1.1209412;
+			atlOffset=1.120945;
 		};
 		class Item124
 		{
@@ -39471,7 +39470,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ToolKit""],[1]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ToolKit"",""ACRE_PRC148""],[1,1]],[[],[]]],false]";
 						};
 					};
 				};
@@ -39511,7 +39510,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ToolKit""],[1]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ToolKit"",""ACRE_PRC148""],[1,1]],[[],[]]],false]";
 						};
 					};
 				};
@@ -54020,7 +54019,6 @@ class Mission
 			};
 			id=6029;
 			type="rhsusf_M1230a1_usarmy_wd";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -54038,22 +54036,12 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACRE_PRC148"",""ToolKit""],[1,1]],[[],[]]],false]";
 						};
 					};
 				};
 				nAttributes=1;
 			};
-		};
-		class Item246
-		{
-			dataType="Group";
-			side="East";
-			class Attributes
-			{
-			};
-			id=6045;
-			atlOffset=4.2833732e+019;
 		};
 	};
 	class Connections
